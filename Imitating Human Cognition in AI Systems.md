@@ -187,7 +187,9 @@ We will use the above mechanisms to create an **Autopilot** for navigating the p
 ### Location Narrative
 
 Our AI will have a model of what is happening around it - the "here-and-now". The current moment will be a story clip with the AI in the centre and things happening around it in a 3D space. Earlier clips will be retained as a sequence going back in time. The current moment will include a visual field of view and a point of visual focus. As mentioned earlier, body-related senses and current emotions are included.
+
 ![location narrative](assets/images/fig-here-and-now.png)
+
 Our AI will also have a huge store of clips and sequences as experiences that it will use to build its story of the here-and-now from the sensory data it is receiving. There will be two sources of information for the story...
 
 - A stream of sensory data.
@@ -256,9 +258,11 @@ As there are no new ingredients, we will represent thoughts as objects...
 Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. For navigation this would provide a sense of what lies out of view... 
 
 ![distant locations](assets/images/fig-distant-locations.png)
+
 For manipulating real-world objects it allows ideas to be tested prior to physical action...
 
 ![imagining alternatives](assets/images/fig-imagining-alternatives.png)
+
 Thoughts will often have a time and location that is different from the here-and-now.
 #### Planning
 
@@ -272,7 +276,7 @@ As these connections involve things happening in the real world, it is good that
 
 Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving vehicles has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
 
-### Building a Plan
+#### Building a Plan
 
 Just as the autopilot predicted movement that the AI's motor systems would then follow, the auto-planner's get-next-clip can predict the next step or set of steps based on previous successful thinking patterns in similar situations.
 
