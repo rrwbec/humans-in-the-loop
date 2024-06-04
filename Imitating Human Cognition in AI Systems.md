@@ -271,11 +271,13 @@ As there are no new ingredients, we will represent thoughts as objects...
 
 Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. For navigation this approach would provide a sense of what lies out of view... 
 
-![distant locations](assets/images/fig-distant-locations.png)
+<img src="assets/images/fig-distant-locations.png" width="500"/>
 
 For manipulating real-world objects it allows ideas to be tested prior to physical action...
 
-![imagining alternatives](assets/images/fig-imagining-alternatives.png)
+<img src="assets/images/fig-imagining-alternatives.png" width="500"/>
+  
+<br/>
 
 >This may all seem a little inefficient, like sending letters rather than making a phone call, however note the advantages mentioned above and that this solution excludes optimisations. Most of the hard work is happening within and between clips.
 
