@@ -44,7 +44,7 @@ As stories are familiar to humans and are used throughout the system it will be 
 
 > **Alignment with Human Reasoning** - Build AI systems that think in a similar way to humans so that we can understand them intuitively and trust them.
 
-> **Visibility** - The internal workings and current behaviour settings (values) should be visible and understandable to non-technical humans. This will allow wide participation in the setting of ethical values, creation of standards and policies, and individual customisation.
+> **Transparency** - The internal workings and current behaviour settings (values) should be visible and understandable to non-technical humans. This will allow wide participation in the setting of ethical values, creation of standards and policies, and individual customisation.
 
 > **Minimalism** - Don't create anything new unless it's absolutely necessary. This is usually wasteful, adds complexity and for those reasons it is unlikely that the human brain would have evolved in such a manner. Optimisations will be deferred as they will likely complicate the picture at this stage.
 
@@ -174,7 +174,7 @@ The above may apply to any aspect of a story, such as...
 * A relationship - e.g. never / rarely seen one of these here before.
 * An interaction - e.g it's never / rarely done that before.
 
-#### Visibility
+#### Transparency
 
 Everything in this datatype is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these stories for the interesting sections.
 
@@ -224,27 +224,40 @@ Note that humans  are awake for about six thousand hours per year and constantly
 
 
 
-
-
-
-
-
-
 ## Thinking Level 2 - The Auto-Planner
 
-> *System 1 does not keep track of alternatives that it rejects, or even of the fact that there were alternatives. - Kahneman, Daniel. Thinking, Fast and Slow*
+### Building Plans
+
+Planning will be the process of assembling clips together into a sequence that connects one place and time to another such as "here" to "there", "there to somewhere else", "present me" to "future me" and so on. This will require 'thoughts' - speculative clips that are not part of the here and now. As all clips have an emotional marker attached, the plans can be assessed for quality.
+
+![planning](assets/images/fig-building-bridges.png)
+
+Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving vehicles has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
+
+By not inventing anything new for planning and general thinking (minimalism principle), we are gaining a number of benefits...
+
+- The data type for planning is compatible with the autopilot - they can share data easily.
+- We inherit the autopilot abilities in real-world understanding, prediction, transparency, manipulating objects, focus, composition and so on.
+- The emotion markers will be critical in assiting with the many micro-decisions that will need to be made in any activity.
+
+The construction of plans will involve pre-existing thought patterns that are triggered in certain circumstances. For example, if completing an actual jigsaw puzzle there are a number of standard and learnable behaviours such as...
+
+- Starting with edge pieces or pieces with more features.
+- Knowing how long to look for a piece before giving up and looking for another.
+- Knowing how long to look for a piece before checking that it hasn't fallen on the ground.
+- Knowing how long to look for a piece before checking that you haven't made an earlier mistake.
+
+These behaviours will not require new structures as we can put all of this into another story with a narrative history.
 
 ### Auto-Planner
 
-We will build an auto-planner that will plan future actions based on successful plans stored in experience. When not planning it will scan recent events for anything requiring attention.
+> *System 1 does not keep track of alternatives that it rejects, or even of the fact that there were alternatives. - Kahneman, Daniel. Thinking, Fast and Slow*
 
-This planner will be lightweight and take the first options that arise unless interrupted by a significant emotion (e.g. "this is risky", "this is unfamiliar").
-
-Example tasks are...
+For the auto planner, we are creating a lightwieght process that plans only for familiar situations where the next steps are clear form previous experience such as...
 
 - Driving a car in a familiar location.
 - Buying something in a familiar shop.
-- Arranging items in their usual neat layout.
+- Arranging items in their usual neat layout
 
 ### The Self Narrative
 
@@ -258,13 +271,7 @@ As there are no new ingredients, we will represent thoughts as objects...
 
 ![self narrative](assets/images/fig-self-narrative.png)
 
-Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. 
-
->This may seem like a wierd and clumsy approach, however thinking and planning cocern real world things and generally involve fitting options together like jigsaw pieces. There are thousands of these tiny emotion-based assessments that we make every day, perhaps without realising, as we construct such plans. If we use clips and sequences for this then we can benefit from the existing autopilot understanding (i.e. less training), build real plans using real-world pieces and incorporate emotions to guide all the tiny choices we make every minute. 
->
->Also bear in mind that this solution excludes optimisations.
-
-For navigation this approach would provide a sense of what lies out of view... 
+Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. For navigation this approach would provide a sense of what lies out of view... 
 
 ![distant locations](assets/images/fig-distant-locations.png)
 
@@ -272,22 +279,11 @@ For manipulating real-world objects it allows ideas to be tested prior to physic
 
 ![imagining alternatives](assets/images/fig-imagining-alternatives.png)
 
-Thoughts will often have a time and location that is different from the here-and-now.
-#### Planning
+>This may all seem a little inefficient, like sending letters rather than making a phone call, however note the advantages mentioned above and that this solution excludes optimisations. Most of the hard work is happing within and between clips.
 
-Most planning will be the process of connecting thoughts together to provide a route from one place and time to another such as "here" to "there", "there to somewhere else", "present me" to "future me" and so on. This will ultimately result in a sequence of clips that show the route.
+#### Get-Next-Clip
 
-![planning](assets/images/fig-building-bridges.png)
-
-As these connections involve things happening in the real world, it is good that these thoughts are all the same story data type. Each clip will have an emotional value to give an initial impression as to whether the plan is good or not. 
-
-#### Plans within Plans
-
-Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving vehicles has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
-
-#### Building a Plan
-
-Just as the autopilot predicted movement that the AI's motor systems would then follow, the auto-planner's get-next-clip can predict the next step or set of steps based on previous successful thinking patterns in similar situations.
+Just as the autopilot predicted movement that the AI's motor systems would then follow, the auto-planner's get-next-clip can predict the next step or set of steps based on previous successful thinking patterns in similar situations. 
 
 The construction of novel plans and sequences will be covered in the next section. For now we will assume that a good plan is already available for the situation.
 
@@ -351,7 +347,7 @@ The prediction of the next target for the primary focus may work best a separate
 
 #### Building Sequences
 
-The general process for this level of plan building is something like a jigsaw where the pieces are generated and tested to see if they fit well. For example, if looking for a plan to get from A to B where A and B are clips in working memory, the focus might settle on a sequence with a missing clip: `A -> ? -> B`. It might do this because `B` is very important and therefore attracted attention of the primary focus. The primed auto-planner will then return a candidate connecting clip based on similar situations. Focus can move to this connection and assess it for suitability. Some example assessing patterns are...
+The general process for this level of plan building is to examine the options in more detail to see if they fit well. For example, if looking for a plan to get from A to B where A and B are clips in working memory, the focus might settle on a sequence with a missing clip: `A -> ? -> B`. It might do this because `B` is very important and therefore attracted attention of the primary focus. The primed auto-planner will then return a candidate connecting clip based on similar situations. Focus can move to this connection and assess it for suitability. Some example assessing patterns are...
 
 **Experience the clip in the current context...**
 - **Novelty** - is this familiar or new?
