@@ -178,8 +178,11 @@ The above may apply to any aspect of a story, such as...
 
 Everything in this datatype is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these stories for the interesting sections.
 
+#### Summary
 
+It will be challenging to create a system that can handle this building block, however if this is done then it will allow use to create an entire thinking system that can act in the world and make human-like decisions.
 
+![story summary](assets/images/fig-story-summary.png)
 
 ## Thinking Level 1 - The Autopilot
 
