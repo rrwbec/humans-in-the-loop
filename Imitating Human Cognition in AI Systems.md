@@ -180,7 +180,7 @@ Everything in this datatype is something that humans can understand. They could 
 
 #### Summary
 
-It will be challenging to create a system that can handle this building block, however if this is done then it will allow use to create an entire thinking system that can act in the world and make human-like decisions.
+It will be challenging to create a system that can handle this building block, however if this is done then it will allow us to create an entire thinking system that can act in the world and make human-like decisions.
 
 ![story summary](assets/images/fig-story-summary.png)
 
@@ -292,6 +292,10 @@ The construction of novel plans and sequences will be covered in the next sectio
 The AI's memories will now include what it was thinking and where, for example...
 
 > ... I was approaching a bend in the road and about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike... 
+
+In theory this can go to an arbitrary depth...
+
+> ... I was at home and feeling happy while thinking about the time when I was feeling nervous at work and thinking about my plan to...
 
 These past events will allow...
 
