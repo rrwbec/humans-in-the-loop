@@ -232,13 +232,13 @@ Planning will be the process of assembling clips together into a sequence that c
 
 ![planning](assets/images/fig-building-bridges.png)
 
-Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving vehicles has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
+Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving a vehicle has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
 
 By not inventing anything new for planning and general thinking (minimalism principle), we are gaining a number of benefits...
 
 - The data type for planning is compatible with the autopilot - they can share data easily.
 - We inherit the autopilot abilities in real-world understanding, prediction, transparency, manipulating objects, focus, composition and so on.
-- The emotion markers will be critical in assiting with the many micro-decisions that will need to be made in any activity.
+- The emotion markers will be critical in assiting with the many micro-decisions that must be made for any activity in a complex world.
 
 The construction of plans will involve pre-existing thought patterns that are triggered in certain circumstances. For example, if completing an actual jigsaw puzzle there are a number of standard and learnable behaviours such as...
 
@@ -261,9 +261,7 @@ For the auto planner, we are creating a lightwieght process that plans only for 
 
 ### The Self Narrative
 
-We will extend the location narrative to include thoughts. We will call this the 'self narrative'. The location narrative now only exists as the autopilot's view of the self narrative. 
-
-The self narrative will continue to be distilled into the important clips and sequences. This all remains a *story* with the usual ingredients - we will not invent anything new for thoughts. Aside from our minimalism principle, this also allows the autopilot and auto-planner to share clips and sequences with each other. When driving a car there will be a blend of physical actions and planning - if thinking and acting systems use the same data type and similar underlying machinery then this process will be much easier to engineer.
+We will extend the location narrative to include thoughts. We will call this the 'self narrative'. The location narrative now only exists as the autopilot's view of the self narrative. The self narrative will continue to be distilled into the important clips and sequences.
 
 #### Thoughts as Objects
 
@@ -279,11 +277,11 @@ For manipulating real-world objects it allows ideas to be tested prior to physic
 
 ![imagining alternatives](assets/images/fig-imagining-alternatives.png)
 
->This may all seem a little inefficient, like sending letters rather than making a phone call, however note the advantages mentioned above and that this solution excludes optimisations. Most of the hard work is happing within and between clips.
+>This may all seem a little inefficient, like sending letters rather than making a phone call, however note the advantages mentioned above and that this solution excludes optimisations. Most of the hard work is happening within and between clips.
 
 #### Get-Next-Clip
 
-Just as the autopilot predicted movement that the AI's motor systems would then follow, the auto-planner's get-next-clip can predict the next step or set of steps based on previous successful thinking patterns in similar situations. 
+Just as the autopilot predicted movement that the AI's motor systems would then follow, the auto-planner's get-next-clip can predict the next step or set of steps based on previous successful thinking patterns in similar situations (i.e. the current priming). 
 
 The construction of novel plans and sequences will be covered in the next section. For now we will assume that a good plan is already available for the situation.
 
@@ -403,9 +401,6 @@ The key features of this process are
 - A fine-grained emotion-driven process that may be a good model for truly autonomous systems acting in a complicated world.
 - All these patterns can be inspected and authored by humans.
 - The additional tools and capabilities mentioned in the introduction would significantly boost the speed and accuracy of this process.
-
-
-
 
 
 
