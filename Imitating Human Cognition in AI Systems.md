@@ -255,7 +255,11 @@ As there are no new ingredients, we will represent thoughts as objects...
 
 ![self narrative](assets/images/fig-self-narrative.png)
 
-Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. For navigation this would provide a sense of what lies out of view... 
+Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. 
+
+>This may seem like a wierd and clumsy approach, however remember that thinking and planning cocern real world things and generally involve fitting options together like jigsaw pieces. There are thousands of these tiny emotion-based assessments that we make every day, perhaps without realising, as we construct such plans. If we use clips and sequences for this then we can benefit from the existing autopilot understanding (i.e. less training), build real plans using real-world pieces and incorporate emotions to guide all the tiny choices we make every minute. 
+
+For navigation this would provide a sense of what lies out of view... 
 
 ![distant locations](assets/images/fig-distant-locations.png)
 
