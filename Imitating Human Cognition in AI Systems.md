@@ -257,9 +257,11 @@ As there are no new ingredients, we will represent thoughts as objects...
 
 Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. 
 
->This may seem like a wierd and clumsy approach, however remember that thinking and planning cocern real world things and generally involve fitting options together like jigsaw pieces. There are thousands of these tiny emotion-based assessments that we make every day, perhaps without realising, as we construct such plans. If we use clips and sequences for this then we can benefit from the existing autopilot understanding (i.e. less training), build real plans using real-world pieces and incorporate emotions to guide all the tiny choices we make every minute. 
+>This may seem like a wierd and clumsy approach, however thinking and planning cocern real world things and generally involve fitting options together like jigsaw pieces. There are thousands of these tiny emotion-based assessments that we make every day, perhaps without realising, as we construct such plans. If we use clips and sequences for this then we can benefit from the existing autopilot understanding (i.e. less training), build real plans using real-world pieces and incorporate emotions to guide all the tiny choices we make every minute. 
+>
+>Also bear in mind that this solution excludes optimisations.
 
-For navigation this would provide a sense of what lies out of view... 
+For navigation this approach would provide a sense of what lies out of view... 
 
 ![distant locations](assets/images/fig-distant-locations.png)
 
@@ -371,9 +373,6 @@ As with the auto-planner, the selected assessing pattern will be based on what w
 >- I should get on with that other task and do this later.
 
 This activity is clearly more processor intensive and more information must be held in working memory.
-
-Note of Doubt - Sometimes doubt can be based on some known numerical probability but often it is much less clear than that. I may be simply that some situation is new and the outcome is important. Doubt, therefore, will be just another emotion that can be weighed up against the other emotions and likewise calibrated when tuning the system. It is still possible to generate a feeling of doubt from some statistical calculation, but thereafter it is an emotion that is compatible with our exisitng system.
-
 
 #### Mixed Feelings
 
