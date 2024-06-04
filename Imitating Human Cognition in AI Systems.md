@@ -6,8 +6,7 @@
 
 ## Summary
 
-This document sketches out a potential cognitive architecture for an AI system that uses a single, albeit complex, datatype. This composable building block combined with several "get next token" loops will be used to generate human-like behaviour and understanding of the world at all levels of detail from catching a ball to high-level procedural reasoning,  ethical decisions and a full episodic history thereof. All actions and thoughts will be steered by emotional priorities that consider the wider picture. Furthermore this building block will be human readable (with suitable tools) and it will facilitate the setting of hical and other values by incorporating libraries of exemplar scenarios that can be created and discussed in non-technical human terms. These scenarios will be used directly within the system without any need for translation into an obscure representation.
-
+This document sketches out a potential cognitive architecture for an AI system that uses a single, albeit complex, datatype. This composable building block combined with several "get next token" loops will be used to generate human-like behaviour and understanding of the world at all levels of detail from catching a ball to high-level procedural reasoning,  ethical decisions and a full episodic history thereof. All actions and thoughts will be steered by emotional priorities that consider the wider picture. Furthermore this building block will be human readable (with suitable tools) and it will facilitate the setting of ethical and other values by incorporating libraries of exemplar scenarios that can be created and discussed in non-technical human terms.
 
 
 ## Introduction
@@ -68,13 +67,13 @@ In this discussion I define "stories" as short sequences of events taking place 
 I will split stories into 'clips', 'sequences' and 'narratives'
 #### Clips
 
-A clips will show one significant thing in a short time slice. Often there will be some movement that is analogous to motion blur in an animation. The significant thing might be a object or a single event such as a collision or change. It could be a notable absence of any change.
+A clips will show one significant thing in a short time slice. Often there will be some movement or other change that is analogous to motion blur in an animation. The significant thing might be a object or a single event such as a collision or change. It could be a notable absence of any change.
 
 Each clip will have one or more emotional reactions assigned.
 
 > Everything within a clip exists within a three-dimensional space and a slice of time. Nothing can exist outside of this, though the space or time element can be trimmed down so that its presence is minimal.
 
-The most used clips, such as the way that objects fall under gravity, will generally be distilled down to an almost abstract seeming pattern that only contains the essential elements. This will also include common thought patterns ("Have I got my keys?")
+The most used clips, such as the way that objects fall under gravity, will generally be distilled down to an almost abstract seeming pattern that only contains the essential elements. This will also include common thought patterns ("I should do this first")
 
 #### Sequences
 
@@ -122,7 +121,7 @@ There will likely be other required ingredients such as intuitive counting ("The
 
 > An AI system enters a kitchen and looks around. It hears a noise behind it and looks to see an egg rolling off a table and falling to the ground.
 
-In the above situation, the system must respond to a sound, move its body and focus on the source. It will need to build an understanding of the world as a story using its **experience** - a large store of stories about the world. This works because stories are composable.
+In the above situation, the system must respond to a sound, move its body and focus on the source. It will need to build an understanding of the world as a story using its experience - a large store of stories about the world. This works because stories are composable.
 #### Composition
 
 If there is an unmatched object in view that looks eggy or acts eggy then the AI system will be able to add detail to story by replacing "unidentified roundish falling brown thing" with the best matching egg story. This story is now of an egg falling and the next clarification includes a prediction of a mess on the floor and some negative emotion.
@@ -186,7 +185,8 @@ It will be challenging to create a system that can handle this building block, h
 
 ## Thinking Level 1 - The Autopilot
 
-We will use the above mechanisms to create an **Autopilot** for navigating the physical world.
+We will use the above mechanisms to create an **Autopilot** for navigating the physical world. This will be able to interact with the physical world (e.g. observe, walk, pick up items) and respond quickly to events. It will not be capable of multi-step planning above this level of detail.
+
 ### Location Narrative
 
 Our AI will have a model of what is happening around it - the "here-and-now". The current moment will be a story clip with the AI in the centre and things happening around it in a 3D space. Earlier clips will be retained as a sequence going back in time. The current moment will include a visual field of view and a point of visual focus. As mentioned earlier, body-related senses and current emotions are included.
@@ -232,13 +232,13 @@ Planning will be the process of assembling clips together into a sequence that c
 
 ![planning](assets/images/fig-building-bridges.png)
 
-Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving a vehicle has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail where the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
+Like everything else, plans will be compositional so wider plans will include common sub-steps and so on. For example, when tidying the kitchen, there will be patterns for where any given item should go and the intermediate steps (opening a cupboard door).  Driving a vehicle has many such actions from looking ahead and behind, planning the desired speed, adjusting the controls to meet this, and so on. Many of these will be the usual next step or a short sequence (mirror, signal, manoeuvre). When implementing a plan, there will be a level of detail below which the autopilot can deal with the intervening steps (e.g. walking, picking up objects, changing visual focus etc). 
 
 By not inventing anything new for planning and general thinking (minimalism principle), we are gaining a number of benefits...
 
 - The data type for planning is compatible with the autopilot - they can share data easily.
 - We inherit the autopilot abilities in real-world understanding, prediction, transparency, manipulating objects, focus, composition and so on.
-- The emotion markers will be critical in assiting with the many micro-decisions that must be made for any activity in a complex world.
+- The emotion markers will be critical in assisting with the many micro-decisions that must be made for any activity in a complex world.
 
 The construction of plans will involve pre-existing thought patterns that are triggered in certain circumstances. For example, if completing an actual jigsaw puzzle there are a number of standard and learnable behaviours such as...
 
@@ -253,7 +253,7 @@ These behaviours will not require new structures as we can put all of this into 
 
 > *System 1 does not keep track of alternatives that it rejects, or even of the fact that there were alternatives. - Kahneman, Daniel. Thinking, Fast and Slow*
 
-For the auto planner, we are creating a lightwieght process that plans only for familiar situations where the next steps are clear form previous experience such as...
+For the auto planner, we are creating a lightweight process that plans only for familiar situations where the next steps are clear form previous experience such as...
 
 - Driving a car in a familiar location.
 - Buying something in a familiar shop.
@@ -291,7 +291,7 @@ The construction of novel plans and sequences will be covered in the next sectio
 
 The AI's memories will now include what it was thinking and where, for example...
 
-> ... I was approaching a bend in the road and about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike... 
+> ... I was approaching a bend in the road and was about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike... 
 
 In theory this can go to an arbitrary depth...
 
@@ -347,7 +347,7 @@ The narrative history now includes this clip and the new emotion for this situat
 
 >Strong emotions will result in a faster production of ideas and a corresponding greater quantity of ideas in working memory.
 
-The prediction of the next target for the primary focus may work best a separate loop from the get-next-clip calls so that the autopilot and auto-planner can produce next clips independently. This needs more thought.
+The prediction of the next target for the primary focus may work best a separate loop from the get-next-clip calls so that the autopilot and auto-planner can produce next clips independently.
 
 #### Building Sequences
 
@@ -448,8 +448,8 @@ There is some potential to use an LLM to test the planner logic. This might invo
 A separate document is in progress on related technologies. These include...
 
 * **Scenario Database (SDB)** - A database of scenarios with a story-based query language. This may be useful for curating exemplar scenarios and for navigating other AI risks (e.g. "who guards the guards").
-* **Levels of Truth** - A knowledge source with emotions such as doubt and uncertainty baked in. This would this be useful for representing multiple perspectives?
-* **Super-intelligence** - A super intelligent AI does not need to be good all types of thinking. With the above architecture, much of the reasoning and intuitions about geometry, maths and so forth are *within* a clip. If these abilities were superhuman, but the processing of clips and sequences was poor, then the system could have incredible insights into maths and physics but perform less well than a typical human on a simple shopping trip.  Conversely, a network of human-like systems could form a logistical powerhouse spanning the world but remain human-level at each node. 
+* **Levels of Truth** - A knowledge source with emotions such as doubt and uncertainty baked in. This might be useful for representing multiple perspectives.
+* **Superintelligence** - A superintelligent AI does not need to be good all types of thinking. With the above architecture, much of the reasoning and intuitions about geometry, maths and so forth are *within* a clip. If these abilities were superhuman, but the processing of clips and sequences was poor, then the system could have incredible insights into maths and physics but perform less well than a typical human on a simple shopping trip.  Conversely, a network of human-like systems could form a logistical powerhouse spanning the world but remain human-level at each node. 
 
 
 
@@ -459,7 +459,7 @@ A separate document is in progress on related technologies. These include...
 
 Is it possible to build a human-style mind using the machinery of a simpler type of mind? Can it be turtles all the way up? This proposal needs more investigation and proof of concept projects to see if it really hangs together. 
 
-I feel that the benefits are such that this warrants further study.  Our future ecosystem of AIs would be much improved by a familiar human-like presence in the mix. It would be possible to create meaningful regulations and ultimately trust these systems.
+I feel that the benefits are such that this warrants further study.  Our future ecosystem of AIs would be much improved by a familiar human-like presence in the mix. It may be possible to create meaningful regulations and ultimately trust these systems.
 
 
 
