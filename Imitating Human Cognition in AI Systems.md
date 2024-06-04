@@ -371,6 +371,10 @@ As with the auto-planner, the selected assessing pattern will be based on what w
 >- I should get on with that other task and do this later.
 
 This activity is clearly more processor intensive and more information must be held in working memory.
+
+Note of Doubt - Sometimes doubt can be based on some known numerical probability but often it is much less clear than that. I may be simply that some situation is new and the outcome is important. Doubt, therefore, will be just another emotion that can be weighed up against the other emotions and likewise calibrated when tuning the system. It is still possible to generate a feeling of doubt from some statistical calculation, but thereafter it is an emotion that is compatible with our exisitng system.
+
+
 #### Mixed Feelings
 
 The clips in a sequence may have conflicting emotions. These could be played in quick succession to provide an overall experience of these emotions. Here is an illustration of how this might work behind the scenes...
