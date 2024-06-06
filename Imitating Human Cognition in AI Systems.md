@@ -82,6 +82,7 @@ A sequence is a set of clips that follow one another in time. They should blend 
 
 * A set of dominoes toppling (no gaps)
 * The main stages in a journey (gaps)
+
 #### Narratives
 A set of sequences arranged on a timeline. The timeline may span years.
 
@@ -91,32 +92,29 @@ Story clips will have a range of *ingredients* described below. These will typic
 
 > There is a balance to be struck between curating these ingredients and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there *may* be some things that are not optional, such as time, causation and three spatial dimensions.
 
-To get things moving, however, we will define a set of ingredients...
-#### Time and Causation
-Time moves forward and "things happen". An important use of a story is to predict what happens next based on what happened previously.
-#### Senses
-Standard set of human senses including body senses such as proprioception ('muscle' positions), hunger and damage.
-#### Emotions 
-Having predicted the likely outcomes, we need to know what is preferred in order to guide AI actions. This will include directing focus to important things. Emotions will be considered part of the physical body so as to avoid adding any new components (minimalism principle).
-#### Visual-Spatial
-Three-dimensional geometry, colours and patterns. This includes movement, surfaces, proximity, physical contact and the layout of surroundings. 
-#### Agents
-Humans and other creatures, as well as other AI systems, that have inner motives guiding their actions in the world. For humans at least, a sophisticated theory of mind is required, though this is not covered in any detail in this discussion.
-#### Location and Situation
-We will need to encode the location and general situation as this will be very important when selecting relevant experiences. 
+To get things moving, however, we will make the following assumptions...
 
->It may be that this is an ingredient of clips, or it may be sufficient for the clip storage in experience to be connected to locations and situations. 
+* **As mentioned earlier, everything within a clip exists within a three-dimensional space and a slice of time. Nothing can exist outside of this.** Contextually unimportant space or time ingredients can be trimmed down or flattened so that their presence is minimal. It may be that all clips can be a moment in time, with or without some motion information and that sequences can take care of the rest.
+* Causation may well arise entirely from the handling of sequences and the consistent and ever-present time flow.
 
+In addition to the above, the following ingredients may be present...
+
+* **Sensory Information** - Standard set of human senses including body senses such as proprioception ('muscle' positions), hunger and damage.
+
+* **Emotions**  - Having predicted the likely outcomes, we need to know what is preferred in order to guide AI actions. This will include directing focus to important things. Emotions will be considered part of the physical body so as to avoid adding any new components (minimalism principle). These will esseentially be numbers and we will need a range of different emotions to guide actions in various ways. This will be discussed in more detail later.
+
+* **Visual-Spatial** - Three-dimensional geometry, colours and patterns. This includes movement, surfaces, proximity, physical contact and the layout of surroundings. 
+
+* **Agents and Theory of Mind** - Humans and other creatures, as well as other AI systems, that have inner motives guiding their actions in the world. For humans at least, a sophisticated theory of mind is required, though this is not covered in any detail in this discussion.
+
+* **Location and Situation** - We will need to encode the location and general situation as this will be very important when selecting relevant experiences. It may be that this is an ingredient of clips, or it may be sufficient for the clip storage in experience to be connected to locations and situations. 
 Examples include...
+	* At home
+	* On holiday
+	* At Bob's birthday party
+	* At the cinema
 
-- At home
-- On holiday
-- At Bob's birthday party
-- At the cinema
-#### Other Ingredients
-There will likely be other required ingredients such as intuitive counting ("There are three lights.") and some that might not be required but are useful optimisations (intuitive physics and reading facial expressions might be learnable using the existing ingredients without a dedicated ingredient).
-
-**As we are using a story as our building block, nothing can exist outside of a story. This also means that nothing can exist outside of three-dimensional space and time.**
+* **Other Ingredients** There will likely be other required ingredients such as intuitive counting ("there are three lights") and some that might not be required but are useful optimisations (intuitive physics and reading facial expressions might be learnable using the existing ingredients without a dedicated ingredient).
 
 ### Building Stories from Stories
 
@@ -429,6 +427,8 @@ There are many unanswered questions with respect to training. Some initial thoug
 * The story data type is very complex - much more so that text or pixels. A hierarchy of processing may be helpful so that aspects such as geometry can be handled first. Ultimately it seems that there must be a neural network somewhere that can handle the full story data type. If this data type changes, e.g. to incorporate a new ingredient, then it may be necessary to fully retrain this part of the system. 
 
 * As previously mentioned, there is a balance to be struck between curating the data type and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there may be some things that are not optional, such as time and three spatial dimensions.
+
+* The recursive nature of thoughts-as-objects may be very challenging, thought if there is a solid grounding for real-world objects then it is *possible* that this level may be relatively easy.
 
 * It may be that after some level of training has occurred, a vast set of knowledge can be added more easily via text. This would include thinking patterns.
 
