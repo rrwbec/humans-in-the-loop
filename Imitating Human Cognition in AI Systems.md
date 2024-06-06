@@ -329,6 +329,28 @@ The thinking system above relies on situations covered by general training exper
 - Deciding between options.
 - Considering wider goals and plans.
 
+### Emotions
+
+Emotions are at the core of decision making and their essential purpose is to prime the system for thougths and actions that meet higher-level goals. Whilst these are essentially numbers, it is possible that a wide range of these will be required. Some illustrative possibilities are...
+
+* Curiosity - to encourage useful action that is not part of some assigned task.
+* Interest - to keep working on something.
+* Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
+* Doubt - to pause, consider and temper other emotions present in a plan.
+* Compassion and Empathy - to act safely
+* Worry - to keep an important matter in mind.
+* Urgency - to work faster.
+* Regret - to ponder past actions and build better plans for the future.
+* Pride - to create a desire for social approval and for doing a job well.
+* Humility - to temper rash confidence.
+* Joy, Hapiness etc - Counterparts to worry, regret and other negative emotions.
+
+... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable tradeoff for a large number of smaller gains. 
+
+> An additional benefit of emotions is to imporove human-machine interactions, therefore there is an incentive to replicate human emotions where reasonable (i.e. there will be some emotions that we will not want to include).
+
+> Of course, we don't know what this means in terms of subjective experience for the AI. That is a harder problem.
+
 ### The Primary Focus
 
 We will add a new focus that will "look at" a target clip, internal or external (the physical metaphor is still in use). If looking at thoughts, then the auto-planner focus will align with this new focus. If looking at the here-and-now, then it will align with and steer the autopilot's focus (usually the visual focus).
@@ -341,7 +363,7 @@ The AI system will react emotionally to the target clip. This reaction may be di
 
 The narrative history now includes this clip and the new emotion for this situation. Furthermore, the emotion will linger for a period of time (depending on the strength and type of emotion). The contents of the target clip and the new emotions that it generates will have a significant effect on priming, and so subsequent thoughts and thought patterns will be strongly affected, i.e. the auto-planner will produce clips related to the target item rather than moving on with a single next step. 
 
-> Emotions will steer the auto-planner into new territory.
+>Emotions will steer the auto-planner into new territory.
 
 >Strong emotions will result in a faster production of ideas and a corresponding greater quantity of ideas in working memory.
 
@@ -469,6 +491,7 @@ I feel that the benefits are such that this warrants further study.  Our future 
 * Prolegomena to Any Future Metaphysics - *Kant, Immanuel*
 * Human Intelligence: Insights from Infants (YouTube) - *Spelke, Elizabeth*
 * Robert Miles AI Safety (YouTube) - *Miles, Robert*
+* Atlas of the Heart - *Brown, Brené*
 
 
 
