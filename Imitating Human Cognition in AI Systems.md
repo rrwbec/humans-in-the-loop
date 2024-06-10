@@ -89,12 +89,12 @@ A set of sequences arranged on a timeline. The timeline may span years.
 
 Story clips will have a range of *ingredients* described below. These will typically require specialist software behind the scenes.
 
-> There is a balance to be struck between curating these ingredients and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there *may* be some things that are not optional, such as time, causation and three spatial dimensions.
+> There is a balance to be struck between curating these ingredients and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there *may* be some things that are not optional, such as time, causation and three spatial dimensions. Furthermore, uncurated features will be less transparent to humans.
 
 To get things moving, however, we will make the following assumptions...
 
-* **As mentioned earlier, everything within a clip exists within a three-dimensional space and a slice of time. Nothing can exist outside of this.** Contextually unimportant space or time ingredients can be trimmed down or flattened so that their presence is minimal. It may be that all clips can be a moment in time, with or without some motion information and that sequences can take care of the rest.
-* Causation may well arise entirely from the handling of sequences and the consistent and ever-present time flow.
+* **As mentioned earlier, everything within a clip exists within a three-dimensional space and a slice of time. Nothing can exist outside of this.** Contextually unimportant space or time ingredients can be trimmed down or flattened so that their presence is minimal. It may be that all clips can be a moment in time, with or without some motion information and that sequences can encode any longer time span.
+* **Causation** may well arise entirely from the handling of sequences and the consistent and ever-present time flow.
 
 In addition to the above, the following ingredients may be present...
 
@@ -120,6 +120,7 @@ Examples include...
 > An AI system enters a kitchen and looks around. It hears a noise behind it and looks to see an egg rolling off a table and falling to the ground.
 
 In the above situation, the system must respond to a sound, move its body and focus on the source. It will need to build an understanding of the world as a story using its experience - a large store of stories about the world. This works because stories are composable.
+
 #### Composition
 
 If there is an unmatched object in view that looks eggy or acts eggy then the AI system will be able to add detail to story by replacing "unidentified roundish falling brown thing" with the best matching egg story. This story is now of an egg falling and the next clarification includes a prediction of a mess on the floor and some negative emotion.
@@ -134,20 +135,20 @@ The AI must find the most relevant stories and so have the best chance of predic
 
 #### Distilling Clips to their Essence
 
-These stories in experience should not be full video clips with all details represented. They should only include the essential features. This has a number of advantages...
+These stories in experience should not be full video clips with all details represented. They should only include the key features. This has a number of advantages...
 
 - This saves space by removing unessential details.
 - It removes distracting information that would make clips harder to locate.
 - Merging a clip into another will be easier as only the key information needs to be adjusted to fit in the current clip and all other details can be incorporated bit by bit from other stories. 
 - There is more reuse as a smaller distilled clip is more general and can be used in more situations than a detailed, specific clip.
 
-Essential features are the things that made the clip different from other experiences in some important way. This will be affected by the emotional reaction and novelty of the clip. (Neural networks are good at this kind of processing.)
+Key features are the things that made the clip different from other experiences in some important way. This will be affected by the emotional reaction and **novelty** of the clip. (Neural networks are good at this kind of processing.)
 
 #### Distilling Sequences and Narratives
 
 Sequences can be distilled so that only the key events are included, e.g. a conversation at a party could become something close to "Alice said something to Bob who laughed and knocked over a glass".
 
-Key events include the start and end of a sequence of related events as well as the main things that happened within. These can then be placed in a narrative where the insignificant clips have been removed.
+Key events may include the start and end of a sequence of related events as well as the main things that happened within. These can then be placed in a narrative where the insignificant clips have been removed. 
 
 ![narrative history](assets/images/fig-narrative-history.png)
 
@@ -297,7 +298,7 @@ In theory this can go to an arbitrary depth...
 
 These past events will allow...
 
-* Thoughts to be referred to later and for earlier thoughts to prime later thoughts and actions. 
+* Thoughts to be referred to later and for these earlier thoughts to prime later thoughts and actions. 
 * A full diagnostic review by a safety team.
 * New sections of the self-narrative to be reviewed and the relevant parts incorporated into experience. This will allow
 	* The incorporation of notable plans into future planning strategies (i.e. ones that worked and ones that didn't).
@@ -322,7 +323,7 @@ Although this process is procedural in some ways ("do this then do that") there 
 
 ### Finding Better Solutions
 
-The thinking system above relies on situations covered by general training experience or where such experience can be generalised to a new situation. Some situations may be too novel, however, or require specific knowledge not available in general training. Examples may include emergency services or specific environments (workplaces, homes etc) where an intelligent system needs to get to know specific people, places and routines. In this thinking level we will add...
+The thinking system above relies on situations covered by general training experience or where such experience can be generalised to a new situation. Some situations may be too novel, however, or require specific knowledge not available in general training. Examples may include specific environments (workplaces, homes etc) where an intelligent system needs to get to know specific people, places and routines. In this thinking level we will add...
 
 - Detection that a plan needs more consideration.
 - Construction of alternative plans.
@@ -347,9 +348,9 @@ Emotions are at the core of decision making and their essential purpose is to pr
 
 ... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable tradeoff for a large number of smaller gains. 
 
-> An additional benefit of emotions is to imporove human-machine interactions, therefore there is an incentive to replicate human emotions where reasonable (i.e. there will be some emotions that we will not want to include).
+> An additional benefit of emotions is to imporove human-machine interactions, therefore there is an incentive to replicate human emotions where reasonable (though there will be some emotions that we will not want to include).
 
-> Of course, we don't know what this means in terms of subjective experience for the AI. That is a harder problem.
+> Of course we don't know what this means in terms of subjective experience for the AI. That is a harder problem and a very important one.
 
 ### The Primary Focus
 
@@ -367,7 +368,7 @@ The narrative history now includes this clip and the new emotion for this situat
 
 >Strong emotions will result in a faster production of ideas and a corresponding greater quantity of ideas in working memory.
 
-The prediction of the next target for the primary focus may work best a separate loop from the get-next-clip calls so that the autopilot and auto-planner can produce next clips independently.
+The prediction of the next target for the primary focus may work best in a separate loop from the get-next-clip calls so that the autopilot and auto-planner can produce next clips independently.
 
 #### Building Sequences
 
@@ -387,7 +388,7 @@ The general process for this level of plan building is to examine the options in
 * **Sub-Plans** - focus on the candidate clip with a curiosity emotion and so prime the auto-planner for sub-plans which can then be assessed.
 * **Provenance** - generate likely precursor narratives to assess the reliability of current information
 
-As with the auto-planner, the selected assessing pattern will be based on what worked best in previous similar cases.
+As with the auto-planner, the selected assessing pattern will be based on what worked best in previous similar cases. This is essentially the same mechanism that was used for training the autopilot to interact with the physical world.
 
 >**Throughout this process there is a constant balance of overall priorities**. Some of these will have a wider scope, for example
 >- What level of risk is acceptable to proceed with this plan? 
@@ -446,7 +447,7 @@ If required, then this process could also distribute emotional reactions from co
 
 There are many unanswered questions with respect to training. Some initial thoughts are:
 
-* The story data type is very complex - much more so that text or pixels. A hierarchy of processing may be helpful so that aspects such as geometry can be handled first. Ultimately it seems that there must be a neural network somewhere that can handle the full story data type. If this data type changes, e.g. to incorporate a new ingredient, then it may be necessary to fully retrain this part of the system. 
+* The story data type is very complex - much more so that text or pixels. A hierarchy of processing may be helpful so that aspects such as geometry can be handled first. Ultimately it seems that there must be a neural network somewhere that can handle the full story data type (there may be a way around this however). If this data type changes, e.g. to incorporate a new ingredient, then it may be necessary to fully retrain this part of the system. 
 
 * As previously mentioned, there is a balance to be struck between curating the data type and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there may be some things that are not optional, such as time and three spatial dimensions.
 
