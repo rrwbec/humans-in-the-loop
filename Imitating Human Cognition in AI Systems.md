@@ -178,7 +178,13 @@ Everything in this datatype is something that humans can understand. They could 
 
 #### Summary
 
-It will be challenging to create a system that can handle this building block, however if this is done then it will allow us to create an entire thinking system that can act in the world and make human-like decisions.
+It will be challenging to create a system that can handle this building block, however if this is done then it will allow us to create an entire thinking system that can act in the world and make human-like decisions where...
+
+* **All** knowledge is stored as clips and sequences.
+* Narrative history (aka episodic memory) is itself a sequence.
+* High-level reasoning (aka System 2) is **entirely** the act of arranging clips into sequences with the guidance of emotions (including doubt, curiosity etc).
+* **All** thoughts and physical actions, including the arrangement of clip sequences for reasoning, are are themselves the result of following a clip sequence.
+
 
 ![story summary](assets/images/fig-story-summary.png)
 
@@ -246,7 +252,7 @@ The construction of plans will involve pre-existing thought patterns that are tr
 - Knowing how long to look for a piece before checking that it hasn't fallen on the ground.
 - Knowing how long to look for a piece before checking that you haven't made an earlier mistake.
 
-These behaviours will not require new structures as we can put all of this into another story with a narrative history.
+These behaviours will not require new structures as we can store all of these as sequences within a narrative history.
 
 ### Auto-Planner
 
@@ -332,13 +338,13 @@ The thinking system above relies on situations covered by general training exper
 
 ### Emotions
 
-Emotions are at the core of decision making and their essential purpose is to prime the system for thougths and actions that meet higher-level goals. Whilst these are essentially numbers, it is possible that a wide range of these will be required. Some illustrative possibilities are...
+Emotions are at the core of decision making and their essential purpose is to prime the system for thougths and actions that meet higher-level goals. Whilst these are essentially numbers, it is possible that a wide range of these will be required. Some *illustrative* possibilities are...
 
 * Curiosity - to encourage useful action that is not part of some assigned task.
 * Interest - to keep working on something.
 * Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
 * Doubt - to pause, consider and temper other emotions present in a plan.
-* Compassion and Empathy - to act safely
+* Compassion and Empathy - to consider safety
 * Worry - to keep an important matter in mind.
 * Urgency - to work faster.
 * Regret - to ponder past actions and build better plans for the future.
