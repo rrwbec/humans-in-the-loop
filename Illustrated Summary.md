@@ -22,11 +22,11 @@
 
 #### Clips in Experience
 
-<img src="assets/images/fig-summary-composition-experience.png" width="800"/>
+<img src="assets/images/fig-summary-composition-experience.png" width="1000"/>
 
 #### Layers of Composition
 
-<img src="assets/images/fig-summary-composition-build-a-clip.png" width="800"/>
+<img src="assets/images/fig-summary-composition-build-a-clip.png" width="1000"/>
 
 ## Planning
 

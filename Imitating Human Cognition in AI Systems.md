@@ -270,11 +270,11 @@ We will extend the location narrative to include thoughts. We will call this the
 
 #### Thoughts as Objects
 
-As there are no new ingredients, we will represent thoughts as objects...
+As there are no new ingredients, we will represent thoughts as objects. It will be possible to assemble thoughts like lego pieces to create a plan (i.e. sequence). In addition they could be overlayed onto the here-and-now if required. This ability will build on lower-level abilities in manipulating real-world objects - i.e. there will be less training required for this additional layer if the system can already arrange objects.
 
 ![self narrative](assets/images/fig-self-narrative.png)
 
-Thoughts will be similar to "thought bubbles" and can be overlayed onto the here-and-now when required. For navigation this approach would provide a sense of what lies out of view... 
+For navigation this approach would provide a sense of what lies out of view... 
 
 <img src="assets/images/fig-distant-locations.png" width="500"/>
 
