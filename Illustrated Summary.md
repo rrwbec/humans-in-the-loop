@@ -48,6 +48,14 @@ Most, perhaps all, active thinking is the process of finding a route from one lo
 
 This will be achieved by building sequences that represent these routes.
 
+### Thoughts as Objects
+
+todo
+
+### Emotional Guidance
+
+todo
+
 
 ### Thinking Patterns
 
