@@ -3,6 +3,8 @@
 
 ## Core Building Blocks
 
+todo
+
 ### Clips
 
 #### Space and Time
@@ -31,4 +33,10 @@
 ## Planning
 
 todo
+
+### Thinking Patterns
+
+Some of the many thinking patterns include...
+
+<img src="assets/images/fig-summary-planning-patterns.png" width="700">
 
