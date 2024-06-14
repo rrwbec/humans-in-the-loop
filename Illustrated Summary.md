@@ -7,7 +7,7 @@ Cognitive functions in this model will be built entirely from "clips". Clips can
 
 ### Clips
 
-A clip is a representation of 3D space with a small time component so that movement can be represented.
+A clip is a representation of 3D space with a small time component so that movement can be included.
 
 #### Space and Time
 <img src="assets/images/fig-summary-clip.png" width="500"/>
