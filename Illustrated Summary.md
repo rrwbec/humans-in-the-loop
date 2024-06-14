@@ -56,7 +56,9 @@ This example illustrates some of the thinking patterns that may be used when pla
 
 ### Thoughts as Objects
 
-todo
+As can be seen from the example, thinking is a bit like manipulating objects. This is already handled by clips and sequences so the above process can be placed into our existing framework.
+
+<img src="assets/images/fig-summary-thoughts-as-objects.png" width="1000"/>
 
 ### Emotional Guidance
 
