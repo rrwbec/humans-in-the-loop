@@ -44,9 +44,15 @@ The AI system's experience will include a huge number of sequences that will be 
 
 Most, perhaps all, active thinking is the process of finding a route from one location in space and time to another.
 
-<img src="assets/images/fig-building-bridges.png" width="800">
+<img src="assets/images/fig-building-bridges.png" width="800"/>
 
 This will be achieved by building sequences that represent these routes.
+
+### Navigation Example
+
+This example illustrates some of the thinking patterns that may be used when planning a route between locations. It does not include evey step.
+
+<img src="assets/images/fig-summary-navigation.png" width="800"/>
 
 ### Thoughts as Objects
 
@@ -61,5 +67,5 @@ todo
 
 Some of the many thinking patterns include...
 
-<img src="assets/images/fig-summary-planning-patterns.png" width="800">
+<img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
 
