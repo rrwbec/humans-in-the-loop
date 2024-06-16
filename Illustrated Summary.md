@@ -48,7 +48,7 @@ Most, perhaps all, active thinking is the process of finding a route from one lo
 
 This will be achieved by building sequences that represent these routes.
 
-### Navigation Example
+### Example 1 - Navigation
 
 This example illustrates some of the thinking patterns that may be used when planning a route between locations. It does not include evey step.
 
@@ -64,6 +64,11 @@ As can be seen from the example, thinking is a bit like manipulating objects. Th
 
 todo
 
+### Example 2 - Pythagoras
+
+If solving a geometry question, then there will be a range of overlapping thought patterns that describe the steps. Our system will return the best matching pattern in any given moment.
+
+<img src="assets/images/fig-summary-example-pythagoras.png" width="800"/>
 
 ### Thinking Patterns
 
