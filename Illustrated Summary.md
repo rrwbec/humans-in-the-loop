@@ -47,7 +47,7 @@ The AI system's memory will be comprised of clips and sequences that can be matc
 
 A "get-next-clip" loop will continually refresh the here-and-now clip. Older clips will be added to a sequence representing what happened previously.
 
-<img src="assets/images/fig-summary-world-model-narrative.png" width="800"/>
+<img src="assets/images/fig-summary-world-model-narrative.png" width="1000"/>
 
 Note: The storage of past events will be covered in more detail when this is expanded to incorporate a full self-narrative later in this summary.
 
@@ -59,7 +59,11 @@ todo - catching prediction illustration
 
 ### Experiences vs Senses
 
-Most of the physical world model will be build from experiences as this is where the richest data is held. This may result in a trade-off where clips can incorrectly override sensory information, similar to when a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement and the predicted leg motion is likewise designed for a moving surface.
+Most of the physical world model will be build from experiences as this data is pre-processed and rich in predictive value. This may result in a trade-off where clips can incorrectly override sensory information similar to when a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement and the predicted leg motion is likewise designed for a moving surface.
+
+### Summary
+
+At this point the AI system should, in principle, be able to build a human-like model of the environment and perform actions such as focus on an object, manipulate objects, walk, catch a ball and other such actions that don't require advanced planning.
 
 ## The Thinking Process
 
@@ -79,7 +83,11 @@ This example illustrates some of the thinking patterns that may be used when pla
 
 ### Thoughts as Objects
 
-As can be seen from the example, thinking is a bit like manipulating objects. This is already handled by clips and sequences so the above process can be placed into our existing framework.
+As can be seen from the example, thinking is a bit like manipulating objects. 
+
+> **This is already handled by clips and sequences so the above process can be placed into our existing framework.**
+
+<br/>
 
 <img src="assets/images/fig-summary-thoughts-as-objects.png" width="1000"/>
 
@@ -91,7 +99,9 @@ todo - more detail
 
 ### Emotional Guidance and AI Safety
 
-#### ..
+#### Purpose of Emotions
+
+Emotions are the steering wheel for decisions. They will have a strong influence on which clip (including thought pattern clips) will be retrieved from experience. This means that they exert their influence for every state change in the system.
 
 #### Illustrative List
 
@@ -132,6 +142,8 @@ Some of the many thinking patterns include...
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
 
 ## The Self Narrative - Putting it all Together
+
+todo
 
 
 
