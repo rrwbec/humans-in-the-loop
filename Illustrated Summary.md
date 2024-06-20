@@ -49,12 +49,17 @@ A "get-next-clip" loop will continually refresh the here-and-now clip. Older cli
 
 <img src="assets/images/fig-summary-world-model-narrative.png" width="800"/>
 
-
-#### Key Features
-
+Note: The storage of past events will be covered in more detail when this is expanded to incorporate a full self-narrative later in this summary.
 
 ### Actions
 
+If the AI system has a physical body then this will be included in experience. Physical actions such as adjusting visual focus, walking, reaching etc will be predicted just like other phenomena. The body will follow whatever the current prediction is.
+
+todo - catching prediction illustration
+
+### Experiences vs Senses
+
+Most of the physical world model will be build from experiences as this is where the richest data is held. This may result in a trade-off where clips can incorrectly override sensory information, similar to when a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement and the predicted leg motion is likewise designed for a moving surface.
 
 ## The Thinking Process
 
@@ -68,7 +73,7 @@ This will be achieved by building sequences that represent these routes.
 
 ### Example 1 - Navigation
 
-This example illustrates some of the thinking patterns that may be used when planning a route between locations. It does not include evey step.
+This example illustrates some of the thinking patterns that may be used when planning a route between locations. It does not include every step.
 
 <img src="assets/images/fig-summary-navigation.png" width="800"/>
 
@@ -77,6 +82,12 @@ This example illustrates some of the thinking patterns that may be used when pla
 As can be seen from the example, thinking is a bit like manipulating objects. This is already handled by clips and sequences so the above process can be placed into our existing framework.
 
 <img src="assets/images/fig-summary-thoughts-as-objects.png" width="1000"/>
+
+### Thinking History
+
+Thoughts will be recorded as sequences and key elements can be extracted for re-use.
+
+todo - more detail
 
 ### Emotional Guidance and AI Safety
 
