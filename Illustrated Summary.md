@@ -3,7 +3,9 @@
 
 ## Core Building Blocks
 
-Cognitive functions in this model will be built entirely from "clips". Clips can be arranged into "sequences".
+Cognitive functions in this model will be built entirely from **clips**. Clips can be arranged into **sequences**.
+
+> Note: "Frame" might have been a better word than "clip", but this term is already used in this domain.
 
 ### Clips
 
@@ -25,7 +27,6 @@ Clips will be arranged into sequences that depict change over time. This is wher
 <img src="assets/images/fig-summary-sequence.png" width="1000"/>
 
 
-
 ### Composition
 
 #### Clips in Experience
@@ -34,9 +35,27 @@ The AI system's experience will include a huge number of sequences that will be 
 
 <img src="assets/images/fig-summary-composition-experience.png" width="1000"/>
 
-#### Layers of Composition
+#### Observing the Here and Now
 
 <img src="assets/images/fig-summary-composition-build-a-clip.png" width="1000"/>
+
+### Recording Experiences
+
+#### Key Features
+
+Features that are not relevant to the context will be readily discarded, such as...
+
+- 
+
+Features may also be highlighted due to their attached emotions, such as...
+
+- Very important things - (fear, desire, ...)
+- New or atypical things - (surprise, curiosity, ...)
+
+
+#### World Model Narrative
+
+<img src="assets/images/fig-summary-world-model-narrative.png" width="800"/>
 
 ## The Thinking Process
 
@@ -60,9 +79,33 @@ As can be seen from the example, thinking is a bit like manipulating objects. Th
 
 <img src="assets/images/fig-summary-thoughts-as-objects.png" width="1000"/>
 
-### Emotional Guidance
+### Emotional Guidance and AI Safety
 
-todo
+#### ..
+
+#### Illustrative List
+
+Illustrative priming effect of emotions...
+
+* Doubt - to pause, consider and temper other emotions present in a plan.
+* Compassion and Empathy - to encourage thoughts of safety and kindness.
+* Curiosity - to encourage useful action that is not part of some assigned task.
+* Interest - to keep working on something.
+* Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
+* Worry - to keep an important matter in mind.
+* Urgency - to work faster and use more power.
+* Regret - to ponder past actions and build better plans for the future.
+* Pride - to create a desire for social approval and for doing a job well.
+* Humility - to temper rash confidence.
+* Joy, Hapiness etc - Counterparts to worry, regret and other negative emotions.
+
+... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable tradeoff for a large number of smaller gains. 
+
+#### Defining Emotions
+
+-  A set of very general exemplar sequences will be defined and these will set the emotional goals of the system. Sequences that pattern-match to these core sequences will inherit these emotions according to the degree of similarity.
+
+- This will likely require delicate calibration. It should be possible to author a large set of more specific scenarios in natural language along with expected emotional responses and / or consequent actions. These would be used for testing the system's motivations, including AI safety.
 
 ### Example 2 - Pythagoras
 
@@ -75,4 +118,8 @@ If solving a geometry question, then there will be a range of overlapping though
 Some of the many thinking patterns include...
 
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
+
+## The Self Narrative - Putting it all Together
+
+
 
