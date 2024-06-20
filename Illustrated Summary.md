@@ -26,36 +26,35 @@ Clips will be arranged into sequences that depict change over time. This is wher
 
 <img src="assets/images/fig-summary-sequence.png" width="1000"/>
 
+### Physical World Model
 
-### Composition
+The AI system's experience will include a huge number of sequences that will be combined with sensory information to build a model of the physical world using composition.
 
-#### Clips in Experience
+#### Composition
 
-The AI system's experience will include a huge number of sequences that will be used to understand the world and to make plans.
-
-<img src="assets/images/fig-summary-composition-experience.png" width="1000"/>
-
-#### Observing the Here and Now
+Clips are composed of other clips. This allows re-use of experiences in multiple settings and vastly reduces the amount of data that needs to be stored.
 
 <img src="assets/images/fig-summary-composition-build-a-clip.png" width="1000"/>
 
-### Recording Experiences
+#### Experience
+
+The AI system's memory will be comprised of clips and sequences that can be matched with sensory data to build a model (i.e. a clip) of the immediate physical surroundings - the "Here and Now".
+
+<img src="assets/images/fig-summary-composition-experience.png" width="1000"/>
+
+
+#### Get-Next-Clip
+
+A "get-next-clip" loop will continually refresh the here-and-now clip. Older clips will be added to a sequence representing what happened previously.
+
+<img src="assets/images/fig-summary-world-model-narrative.png" width="800"/>
+
 
 #### Key Features
 
-Features that are not relevant to the context will be readily discarded, such as...
 
-- 
+### Actions
 
-Features may also be highlighted due to their attached emotions, such as...
-
-- Very important things - (fear, desire, ...)
-- New or atypical things - (surprise, curiosity, ...)
-
-
-#### World Model Narrative
-
-<img src="assets/images/fig-summary-world-model-narrative.png" width="800"/>
 
 ## The Thinking Process
 
@@ -87,19 +86,21 @@ As can be seen from the example, thinking is a bit like manipulating objects. Th
 
 Illustrative priming effect of emotions...
 
-* Doubt - to pause, consider and temper other emotions present in a plan.
-* Compassion and Empathy - to encourage thoughts of safety and kindness.
 * Curiosity - to encourage useful action that is not part of some assigned task.
 * Interest - to keep working on something.
 * Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
+* Doubt - to pause, consider and temper other emotions present in a plan.
+* Compassion and Empathy - to encourage thoughts of safety and kindness.
+* Desire - to act or make plans to reach a goal with positive emotions,
+* Coherence Desire - to adjust sequences (objects, thoughts etc) so that they flow smoothly.
 * Worry - to keep an important matter in mind.
-* Urgency - to work faster and use more power.
+* Urgency - to work faster. May be sub-divided into other types, e.g. fear of missing out.
 * Regret - to ponder past actions and build better plans for the future.
 * Pride - to create a desire for social approval and for doing a job well.
 * Humility - to temper rash confidence.
-* Joy, Hapiness etc - Counterparts to worry, regret and other negative emotions.
+* Joy, Happiness etc - Counterparts to worry, regret and other negative emotions.
 
-... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable tradeoff for a large number of smaller gains. 
+... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable trade-off for a large number of smaller gains. 
 
 #### Defining Emotions
 
@@ -109,7 +110,7 @@ Illustrative priming effect of emotions...
 
 ### Example 2 - Pythagoras
 
-If solving a geometry question, then there will be a range of overlapping thought patterns that describe the steps. Our system will return the best matching pattern in any given moment.
+The process of solving a geometry question will require a range of overlapping thought patterns that describe the steps. Our system will return the best matching pattern in any given moment. If this an exam question, then the starting point is the observed question and the desired end point is for an answer to be written in the appropriate location that will receive full marks from the examiner. An additional requirement is that not too much time is spent on this process.
 
 <img src="assets/images/fig-summary-example-pythagoras.png" width="800"/>
 

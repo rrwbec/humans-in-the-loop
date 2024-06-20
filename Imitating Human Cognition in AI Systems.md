@@ -6,7 +6,7 @@
 
 ## Summary
 
-This document sketches out a potential cognitive architecture for an AI system that uses a single, albeit complex, datatype. This composable building block combined with several "get next token" loops will be used to generate human-like behaviour and understanding of the world at all levels of detail from catching a ball to high-level procedural reasoning,  ethical decisions and a full episodic history thereof. All actions and thoughts will be steered by emotional priorities that consider the wider picture. Furthermore this building block will be human readable (with suitable tools) and it will facilitate the setting of ethical and other values by incorporating libraries of exemplar scenarios that can be created and discussed in non-technical human terms.
+This document sketches out a potential cognitive architecture for an AI system that uses a single, albeit complex, data type. This composable building block combined with several "get next token" loops will be used to generate human-like behaviour and understanding of the world at all levels of detail from catching a ball to high-level procedural reasoning,  ethical decisions and a full episodic history thereof. All actions and thoughts will be steered by emotional priorities that consider the wider picture. Furthermore this building block will be human readable (with suitable tools) and it will facilitate the setting of ethical and other values by incorporating libraries of exemplar scenarios that can be created and discussed in non-technical human terms.
 
 
 ## Introduction
@@ -100,7 +100,7 @@ In addition to the above, the following ingredients may be present...
 
 * **Sensory Information** - Standard set of human senses including body senses such as proprioception ('muscle' positions), hunger and damage.
 
-* **Emotions**  - Having predicted the likely outcomes, we need to know what is preferred in order to guide AI actions. This will include directing focus to important things. Emotions will be considered part of the physical body so as to avoid adding any new components (minimalism principle). These will esseentially be numbers and we will need a range of different emotions to guide actions in various ways. This will be discussed in more detail later.
+* **Emotions**  - Having predicted the likely outcomes, we need to know what is preferred in order to guide AI actions. This will include directing focus to important things. Emotions will be considered part of the physical body so as to avoid adding any new components (minimalism principle). These will essentially be numbers and we will need a range of different emotions to guide actions in various ways. This will be discussed in more detail later.
 
 * **Visual-Spatial** - Three-dimensional geometry, colours and patterns. This includes movement, surfaces, proximity, physical contact and the layout of surroundings. 
 
@@ -174,7 +174,7 @@ The above may apply to any aspect of a story, such as...
 
 #### Transparency
 
-Everything in this datatype is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these stories for the interesting sections.
+Everything in this data type is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these stories for the interesting sections.
 
 #### Summary
 
@@ -270,7 +270,7 @@ We will extend the location narrative to include thoughts. We will call this the
 
 #### Thoughts as Objects
 
-As there are no new ingredients, we will represent thoughts as objects. It will be possible to assemble thoughts like lego pieces to create a plan (i.e. sequence). In addition they could be overlayed onto the here-and-now if required. This ability will build on lower-level abilities in manipulating real-world objects - i.e. there will be less training required for this additional layer if the system can already arrange objects.
+As there are no new ingredients, we will represent thoughts as objects. It will be possible to assemble thoughts like lego pieces to create a plan (i.e. sequence). In addition they could be overlaid onto the here-and-now if required. This ability will build on lower-level abilities in manipulating real-world objects - i.e. there will be less training required for this additional layer if the system can already arrange objects.
 
 ![self narrative](assets/images/fig-self-narrative.png)
 
@@ -338,23 +338,25 @@ The thinking system above relies on situations covered by general training exper
 
 ### Emotions
 
-Emotions are at the core of decision making and their essential purpose is to prime the system for thougths and actions that meet higher-level goals. Whilst these are essentially numbers, it is possible that a wide range of these will be required. Some *illustrative* possibilities are...
+Emotions are at the core of decision making and their essential purpose is to prime the system for thoughts and actions that meet higher-level goals. Whilst these are essentially numbers, it is possible that a wide range of these will be required. Some *illustrative* possibilities are...
 
 * Curiosity - to encourage useful action that is not part of some assigned task.
 * Interest - to keep working on something.
 * Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
 * Doubt - to pause, consider and temper other emotions present in a plan.
-* Compassion and Empathy - to consider safety
+* Compassion and Empathy - to encourage thoughts of safety and kindness.
+* Desire - to act or make plans to reach a goal with positive emotions,
+* Coherence Desire - to adjust sequences (objects, thoughts etc) so that they flow smoothly.
 * Worry - to keep an important matter in mind.
-* Urgency - to work faster.
+* Urgency - to work faster. May be sub-divided into other types, e.g. fear of missing out.
 * Regret - to ponder past actions and build better plans for the future.
 * Pride - to create a desire for social approval and for doing a job well.
 * Humility - to temper rash confidence.
-* Joy, Hapiness etc - Counterparts to worry, regret and other negative emotions.
+* Joy, Happiness etc - Counterparts to worry, regret and other negative emotions.
 
-... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable tradeoff for a large number of smaller gains. 
+... and many more. Choices will be made by considering the balance of these emotions for a given situation. There may need to be some that are strongly negative (figuratively speaking) so that, for example, extreme suffering cannot be considered an acceptable trade-off for a large number of smaller gains. 
 
-> An additional benefit of emotions is to imporove human-machine interactions, therefore there is an incentive to replicate human emotions where reasonable (though there will be some emotions that we will not want to include).
+> An additional benefit of emotions is to improve human-machine interactions, therefore there is an incentive to replicate human emotions where reasonable (though there will be some emotions that we will not want to include).
 
 > Of course we don't know what this means in terms of subjective experience for the AI. That is a harder problem and a very important one.
 
