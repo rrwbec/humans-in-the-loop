@@ -5,7 +5,7 @@
 
 Cognitive functions in this model will be built entirely from **clips**. Clips can be arranged into **sequences**.
 
-> Note: "Frame" might have been a better word than "clip", but this term is already used in this domain.
+> Note: "Frame" might have been a better word than "clip", but this term is already used for a different concept in this domain.
 
 ### Clips
 
@@ -59,11 +59,11 @@ todo - catching prediction illustration
 
 ### Experiences vs Senses
 
-Most of the physical world model will be build from experiences as this data is pre-processed and rich in predictive value. This may result in a trade-off where clips can incorrectly override sensory information similar to when a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement and the predicted leg motion is likewise designed for a moving surface.
+Most of the physical world model will be build from experiences as this data is pre-processed and rich in predictive value. This may result in a trade-off where clips can incorrectly override sensory information. This may be similar to the situation where a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement where there is none and the predicted leg motion is likewise calibrated for a moving surface.
 
 ### Summary
 
-At this point the AI system should, in principle, be able to build a human-like model of the environment and perform actions such as focus on an object, manipulate objects, walk, catch a ball and other such actions that don't require advanced planning.
+>At this point the AI system should, in principle, be able to build a human-like model of the environment and perform actions such as focus on an object, manipulate objects, walk, catch a ball and other such actions that don't require advanced planning.
 
 ## The Thinking Process
 
@@ -101,9 +101,9 @@ todo - more detail
 
 #### Purpose of Emotions
 
-Emotions are the steering wheel for decisions. They will have a strong influence on which clip (including thought pattern clips) will be retrieved from experience. This means that they exert their influence for every state change in the system.
+Emotions are the steering wheel for decisions. They will have a strong influence on which clip (including thought pattern clips) will be retrieved from experience in the next cycle via priming. This means that they exert their influence for every state change in the system allowing fine-grained control.
 
-#### Illustrative List
+#### Illustrative List of Emotions
 
 Illustrative priming effect of emotions...
 
@@ -125,9 +125,9 @@ Illustrative priming effect of emotions...
 
 #### Defining Emotions
 
--  A set of very general exemplar sequences will be defined and these will set the emotional goals of the system. Sequences that pattern-match to these core sequences will inherit these emotions according to the degree of similarity.
+-  A set of very general exemplar sequences will be defined and these will set the emotional goals of the system, e.g. a human being injured. Sequences that pattern-match to these core sequences will inherit these emotions according to the degree of similarity.
 
-- This will likely require delicate calibration. It should be possible to author a large set of more specific scenarios in natural language along with expected emotional responses and / or consequent actions. These would be used for testing the system's motivations, including AI safety.
+- This will likely require delicate calibration. It should be possible to author a large set of more specific scenarios in natural language along with expected emotional responses and / or consequent actions. These would be used for testing the system's motivations, including the AI safety aspects.
 
 ### Example 2 - Pythagoras
 
