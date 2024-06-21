@@ -98,9 +98,7 @@ As can be seen from the example, thinking is a bit like manipulating objects.
 
 ### Thinking History
 
-Thoughts will be recorded as sequences and key elements can be extracted for re-use.
-
-todo - more detail
+Thoughts will be recorded as sequences so that key elements can be extracted for re-use. They will be distilled down to the most general and essential pattern so that they can be matched to the current circumstances even if the specifics of the current circumstances are different to previous experience. E.g "in this sort of situation do this sort of thing followed by that sort of thing". The existing flexibility of clips and sequences that is required for understanding the physical world can be re-used for this process.
 
 ### Emotional Guidance and AI Safety
 
@@ -150,4 +148,3 @@ Some of the many thinking patterns include...
 
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
 
-(todo - add illustrations of Arc solving patterns.)
