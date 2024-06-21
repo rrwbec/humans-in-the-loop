@@ -15,19 +15,23 @@ There are a number of issue with current AI systems. There are gaps in their com
 
 Here I describe a possible approach to address the above issues via a simplistic model of human thinking that I believe may be 'close enough' to our own thinking to provide the control and transparency that we need. This approach may seem somewhat quaint and akin to designing a flying machine based on bird flight, however unlike the flying machine example,  alignment to human thinking is something of significant value in itself.
 
-At the core of this proposal is a central building block that I will refer to in a deliberately non-technical manner as a 'story' and I will show at a high level how it might be possible to build an artificial human-like mind out of this one building block. This includes flexible reasoning and planning.
+At the core of this proposal is a central building block called a 'clip' and I will show at a high level how it might be possible to build an artificial human-like mind out of this one building block. This includes flexible reasoning and planning.
 
-A story is similar to a video clip of an event or sequence of events that occur in a three-dimensional environment with motion, interactions, colours, sound and all the sensory ingredients we are accustomed to. A single event is a 'clip' and clips can be composed of other clips. For example, a clip from a tennis match will be composed of clips of tennis balls, rackets, players, grass, sporting competitions, sunlight and so on. A 'tennis ball' is simply a collection of stories about small yellow furry spheres that behave in certain ways and often appear in tennis match stories. A tennis ball clip will itself be composed of other stories about textures, elastic materials, collisions and so on. 
+A clip is similar to a frame of video but set in a three-dimensional environment with motion, interactions, colours, sound and all the sensory ingredients we are accustomed to. (Note: I have avoided using the term "frame" as this means something else in this domain)
+
+Clips can be arranged into sequences where time moves forwards by some amount (e.g. milliseconds, hours, years) between one clip and the next.
+
+Clips can be composed of other clips or sequences. For example, a clip from a tennis match will be composed of sequences involving tennis balls, rackets, players, grass, sporting competitions, sunlight and so on. A 'tennis ball' is simply a collection of sequences about small yellow furry spheres that behave in certain ways and often appear in tennis match sequences. A tennis ball sequences will itself be composed of other sequences about textures, elastic materials, collisions and so on. 
 
 A very important feature of clips is that they present predictions about what will happen next, such as where that tennis ball is likely to go.
 
 A second important feature is that clips include the emotional response of the observer.
 
-The AI system will require a large store of such of stories (experience and knowledge) that it will use to make sense of the world and predict what will happen next. It will also need sensory input (including a 'body'), and active working stories. Some 'get-next-clip' loops will be used to drive the cognitive processing using active working clips as input. Aside from offline reconciliation of experience and peripheral tools, there are no other moving parts.
+The AI system will require a large store of such of clips (experience and knowledge) that it will use to make sense of the world and predict what will happen next. It will also have sensory input (including a 'body'), and active working sequences. Some 'get-next-clip' loops will be used to drive the cognitive processing using active working clips as input. Aside from offline reconciliation of experience and peripheral tools, there are no other moving parts.
 
 Ethical values would be set by authoring a large set of scenarios in natural language and assigning them emotional responses. These would then guide the AI behaviour. These values will often conflict in real-world situations and the AI would need to weigh up possible actions much as we do - this would include feelings of doubt. I will focus on the technical ability to do this rather on how we would agree what each scenario's emotional response should be.
 
-As stories are familiar to humans and are used throughout the system it will be possible to get a clear view of what the system is thinking and is likely to do.
+As these sequences are familiar to humans and are used throughout the system it will be possible to get a relatively clear view of what the system is thinking and is likely to do.
 
 >**I don't believe there is any idea here that is new**, though I am not aware of this particular building block being used in this particular way.
 
@@ -58,13 +62,8 @@ As stories are familiar to humans and are used throughout the system it will be 
 
 
 
-## Thinking Foundations - Stories as Building Blocks
+## Thinking Foundations - Clips as Building Blocks
 
-#### Clips and Sequences
-
-In this discussion I define "stories" as short sequences of events taking place in a three-dimensional space. They will include the physical body of the observer and associated sensations such as touch, proprioception ('muscle' position), pain, hunger and emotional state. They may also include the thoughts of the observer (as stories).
-
-I will split stories into 'clips', 'sequences' and 'narratives'
 #### Clips
 
 A clips will show one significant thing in a short time slice. Often there will be some movement or other change that is analogous to motion blur in an animation. The significant thing might be a object or a single event such as a collision or change. It could be a notable absence of any change.
@@ -87,7 +86,7 @@ A set of sequences arranged on a timeline. The timeline may span years.
 
 ### Ingredients
 
-Story clips will have a range of *ingredients* described below. These will typically require specialist software behind the scenes.
+Clips will have a range of *ingredients* described below. These will typically require specialist software behind the scenes.
 
 > There is a balance to be struck between curating these ingredients and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there *may* be some things that are not optional, such as time, causation and three spatial dimensions. Furthermore, uncurated features will be less transparent to humans.
 
@@ -115,31 +114,31 @@ Examples include...
 
 * **Other Ingredients** There will likely be other required ingredients such as intuitive counting ("there are three lights") and some that might not be required but are useful optimisations (intuitive physics and reading facial expressions might be learnable using the existing ingredients without a dedicated ingredient).
 
-### Building Stories from Stories
+### Building Clips from Experience
 
 > An AI system enters a kitchen and looks around. It hears a noise behind it and looks to see an egg rolling off a table and falling to the ground.
 
-In the above situation, the system must respond to a sound, move its body and focus on the source. It will need to build an understanding of the world as a story using its experience - a large store of stories about the world. This works because stories are composable.
+In the above situation, the system must respond to a sound, move its body and focus on the source. It will need to build an understanding of the world as a clip using its experience - a large store of clips and sequences about the world. This works because clips are composable.
 
 #### Composition
 
-If there is an unmatched object in view that looks eggy or acts eggy then the AI system will be able to add detail to story by replacing "unidentified roundish falling brown thing" with the best matching egg story. This story is now of an egg falling and the next clarification includes a prediction of a mess on the floor and some negative emotion.
+If there is an unmatched object in view that looks eggy or acts eggy then the AI system will be able to add detail to clip by replacing "unidentified roundish falling brown thing" with the best matching egg sequence. This clip is now of an egg falling and the next clarification includes a prediction of a mess on the floor and some negative emotion.
 
 ![falling egg](assets/images/fig-falling-egg.png)
 
-This process applies to everything in this story, not just eggs and not just objects. It includes tables, floors, kitchens, cooking, homes, things falling off tables, the sunlight that is illuminating the scene, the shocked face of someone in the room, what happened just before and so on. Many of these stories will include what typically happened next.
+This process applies to everything in this sequence, not just eggs and not just objects. It includes tables, floors, kitchens, cooking, homes, things falling off tables, the sunlight that is illuminating the scene, the shocked face of someone in the room, what happened just before and so on. Many of these sequences will include what typically happened next.
 
-These stories will in turn be composed of more fundamental stories - things falling under gravity, smooth surfaces, brittle items, contact and collision and what happens next, shadows on curved objects, and so on.
+These sequences will in turn be composed of more fundamental sequences - things falling under gravity, smooth surfaces, brittle items, contact and collision and what happens next, shadows on curved objects, and so on.
 
-The AI must find the most relevant stories and so have the best chance of predicting accurately what will happen next. This will be used to guide actions.
+The AI must find the most relevant sequences in order to predict most accurately what will happen next. This will be used to guide actions.
 
 #### Distilling Clips to their Essence
 
-These stories in experience should not be full video clips with all details represented. They should only include the key features. This has a number of advantages...
+These sequences in experience should not be full video clips with all details represented. They should only include the key features. This has a number of advantages...
 
 - This saves space by removing unessential details.
 - It removes distracting information that would make clips harder to locate.
-- Merging a clip into another will be easier as only the key information needs to be adjusted to fit in the current clip and all other details can be incorporated bit by bit from other stories. 
+- Merging a clip into another will be easier as only the key information needs to be adjusted to fit in the current clip and all other details can be incorporated bit by bit from other sequences. 
 - There is more reuse as a smaller distilled clip is more general and can be used in more situations than a detailed, specific clip.
 
 Key features are the things that made the clip different from other experiences in some important way. This will be affected by the emotional reaction and **novelty** of the clip. (Neural networks are good at this kind of processing.)
@@ -158,7 +157,7 @@ We will use "interpolation" (i.e. filling in the gaps) to save on space and proc
 
 #### Novelty
 
-An important story quality will be novelty. This will assist with
+An important sequence quality will be novelty. This will assist with
 - The creation of new understandings of interaction and causation when an actual outcome differed from the predicted outcome.
 - Bring the focus of attention to important things such as immediate hazards (an unexpected sound) and potentially useful new information (curiosity).
 - Evoke feelings of doubt which will be important when making decisions.
@@ -167,14 +166,14 @@ Novelty will surface as
 - Never encountered - absence of information.
 - Infrequently encountered - limited instances.
 
-The above may apply to any aspect of a story, such as...
+The above may apply to any aspect of a sequence, such as...
 * An object - e.g. never / rarely seen one of those before.
 * A relationship - e.g. never / rarely seen one of these here before.
 * An interaction - e.g it's never / rarely done that before.
 
 #### Transparency
 
-Everything in this data type is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these stories for the interesting sections.
+Everything in this data type is something that humans can understand. They could be converted into language, 3D animations or combinations thereof depending on which details are important. Tools would be required that allow humans to query these sequences for the interesting sections.
 
 #### Summary
 
@@ -186,7 +185,7 @@ It will be challenging to create a system that can handle this building block, h
 * **All** thoughts and physical actions, including the arrangement of clip sequences for reasoning, are are themselves the result of following a clip sequence.
 
 
-![story summary](assets/images/fig-story-summary.png)
+![sequence summary](assets/images/fig-story-summary.png)
 
 ## Thinking Level 1 - The Autopilot
 
@@ -194,11 +193,11 @@ We will use the above mechanisms to create an **Autopilot** for navigating the p
 
 ### Location Narrative
 
-Our AI will have a model of what is happening around it - the "here-and-now". The current moment will be a story clip with the AI in the centre and things happening around it in a 3D space. Earlier clips will be retained as a sequence going back in time. The current moment will include a visual field of view and a point of visual focus. As mentioned earlier, body-related senses and current emotions are included.
+Our AI will have a model of what is happening around it - the "here-and-now". The current moment will be a  clip with the AI in the centre and things happening around it in a 3D space. Earlier clips will be retained as a sequence going back in time. The current moment will include a visual field of view and a point of visual focus. As mentioned earlier, body-related senses and current emotions are included.
 
 ![location narrative](assets/images/fig-here-and-now.png)
 
-Our AI will also have a huge store of clips and sequences as experiences that it will use to build its story of the here-and-now from the sensory data it is receiving. There will be two sources of information for the story...
+Our AI will also have a huge store of clips and sequences as experiences that it will use to build its clip of the here-and-now from the sensory data it is receiving. There will be two sources of information for the clip...
 
 - A stream of sensory data.
 - Clarifications from experience.
@@ -432,7 +431,7 @@ The key features of this process are
 - The ability to generate multiple guiding steps to some end goal and assess the value of choices in finer detail that a single instinctive judgement would allow.
 - The ability to set up, use and refine thinking patterns for later use.
 - The ability work with thoughts from different settings such as the future, the past, plans for other people and fictional narratives, and to connect these settings - future self goals, where did that come from, how do I get home etc.
-- The ability to create new stories.
+- The ability to create new clips and sequences.
 - A fine-grained emotion-driven process that may be a good model for truly autonomous systems acting in a complicated world.
 - All these patterns can be inspected and authored by humans.
 - The additional tools and capabilities mentioned in the introduction would significantly boost the speed and accuracy of this process.
@@ -444,7 +443,7 @@ The key features of this process are
 Something akin to sleep could be used to consolidate a section of the self-narrative (e.g. one day) into general experiences. This could perhaps be done offline and the resulting weights downloaded by the AI system. The consolidation process would...
 
 - Assess the day's events and emotional moments for significant knowledge. 
-- Add key stories to general experience having removed any internal thoughts that would distract the autopilot.
+- Add key sequences to general experience having removed any internal thoughts that would distract the autopilot.
 - Identify and store the key thinking patterns.
 - Update the level of novelty for key events.
 - Prepend a distilled self-narrative into a long term narrative store.
@@ -455,7 +454,7 @@ If required, then this process could also distribute emotional reactions from co
 
 There are many unanswered questions with respect to training. Some initial thoughts are:
 
-* The story data type is very complex - much more so that text or pixels. A hierarchy of processing may be helpful so that aspects such as geometry can be handled first. Ultimately it seems that there must be a neural network somewhere that can handle the full story data type (there may be a way around this however). If this data type changes, e.g. to incorporate a new ingredient, then it may be necessary to fully retrain this part of the system. 
+* The clip data type is very complex - much more so that text or pixels. A hierarchy of processing may be helpful so that aspects such as geometry can be handled first. Ultimately it seems that there may need to be a neural network somewhere that can handle the full clip data type (there may be a way around this however). If this data type changes, e.g. to incorporate a new ingredient, then it may be necessary to fully retrain this part of the system. 
 
 * As previously mentioned, there is a balance to be struck between curating the data type and allowing the network to discover ingredients by itself - we don't necessarily know what all the human-level ingredients are. Equally, there may be some things that are not optional, such as time and three spatial dimensions.
 
@@ -463,7 +462,7 @@ There are many unanswered questions with respect to training. Some initial thoug
 
 * It may be that after some level of training has occurred, a vast set of knowledge can be added more easily via text. This would include thinking patterns.
 
-* The story type would likely need an embedding representation of some sort for the self-narrative and working memory.
+* The clip type would likely need an embedding representation of some sort for the self-narrative and working memory.
 
 * Simulation will be a key tool, particularly for thoughts-as-objects.
 
@@ -478,7 +477,7 @@ There is some potential to use an LLM to test the planner logic. This might invo
 
 A separate document is in progress on related technologies. These include...
 
-* **Scenario Database (SDB)** - A database of scenarios with a story-based query language. This may be useful for curating exemplar scenarios and for navigating other AI risks (e.g. "who guards the guards").
+* **Scenario Database (SDB)** - A database of scenarios with a sequence-based query language. This may be useful for curating exemplar scenarios and for navigating other AI risks (e.g. "who guards the guards").
 * **Levels of Truth** - A knowledge source with emotions such as doubt and uncertainty baked in. This might be useful for representing multiple perspectives.
 * **Superintelligence** - A superintelligent AI does not need to be good all types of thinking. With the above architecture, much of the reasoning and intuitions about geometry, maths and so forth are *within* a clip. If these abilities were superhuman, but the processing of clips and sequences was poor, then the system could have incredible insights into maths and physics but perform less well than a typical human on a simple shopping trip.  Conversely, a network of human-like systems could form a logistical powerhouse spanning the world but remain human-level at each node. 
 
