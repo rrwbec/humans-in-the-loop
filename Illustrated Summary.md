@@ -60,8 +60,6 @@ Note: The storage of past events will be covered in more detail when this is exp
 
 If the AI system has a physical body then this will be included in experience. Physical actions such as adjusting visual focus, walking, reaching etc will be predicted just like other phenomena. The body will follow whatever the current prediction is.
 
-todo - catching prediction illustration
-
 ### Experiences vs Senses
 
 Most of the physical world model will be build from experiences as this data is pre-processed and rich in predictive value. This may result in a trade-off where clips can incorrectly override sensory information. This may be similar to the situation where a human who is used to escalators encounters a stationary escalator - the loaded clip may include movement where there is none and the predicted leg motion is likewise calibrated for a moving surface.
@@ -132,21 +130,40 @@ This list is an illustration of the kind of priming that certain possible emotio
 
 - This will likely require delicate calibration. It should be possible to author a large set of more specific scenarios in natural language along with expected emotional responses and / or consequent actions. These would be used for testing the system's motivations, including the AI safety aspects.
 
+### Effortful Thinking
+
+The act of effortful thinking involves holding focus on a thought so that the background get-next-clip loop generates subsequent thoughts that are relevant to that particular target of focus. The emotional guidance system should be balanced such that the cost of this thinking, e.g. time (aka opportunity cost) and power consumption, is balanced with whatever outcome is being sought.
+
+The solution finding strategy will typically involve looking at parts of the plan with different types of priming (e.g. what could go wrong here / worry emotion?) to see what options arise and then assessing those options.
+
 ### Example 2 - Pythagoras
 
 The process of solving a geometry question will require a range of overlapping thought patterns that describe the steps. Our system will return the best matching pattern in any given moment. If this an exam question, then the starting point is the observed question and the desired end point is for an answer to be written in the appropriate location that will receive full marks from the examiner. An additional requirement is that not too much time is spent on this process.
 
 <img src="assets/images/fig-summary-example-pythagoras.png" width="800"/>
 
-## The Self Narrative - Putting it all Together
-
-<img src="assets/images/fig-summary-self-narrative-model.png" width="800"/>
-
-todo
-
-## Appendix - Thinking Pattern Examples
+### Thinking Pattern Examples
 
 Some of the many thinking patterns include...
 
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
+
+
+## The Self Narrative - Putting it all Together
+
+The full picture includes the physical world model _and_ thoughts.
+
+<br/>
+<img src="assets/images/fig-summary-self-narrative-model.png" width="800"/>
+<br/>
+
+ This allows:
+ - Thoughts to be understood in their full context - ".. I was approaching a bend in the road and was about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike..."
+ - Integration the two models, e.g. thoughts can be overlaid onto the physical model to test ideas.
+
+ > This is a good reason to avoid creating new structure for thinking that do not exist in our physical world model. The two layers can be blended as required and the thinking layer benefits from the real world model's abilities in handling complexity.
+
+
+
+
 
