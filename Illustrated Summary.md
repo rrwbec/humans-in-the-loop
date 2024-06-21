@@ -140,6 +140,8 @@ The process of solving a geometry question will require a range of overlapping t
 
 ## The Self Narrative - Putting it all Together
 
+<img src="assets/images/fig-summary-self-narrative-model.png" width="800"/>
+
 todo
 
 ## Appendix - Thinking Pattern Examples
