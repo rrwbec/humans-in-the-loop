@@ -20,7 +20,7 @@ A clip is a representation of 3D space with a small time component so that movem
 #### Ingredients
 Clips contain observable phenomena which are represented using particular ingredients. Each ingredient will be handled by a subsystem that specialises in that ingredient, e.g. spatial geometry. 
 
-> Note: motion may be a vector only and therefore an actual time delta is not needed clips.
+> Note: motion may be a vector only and therefore an actual time delta may not be required for clips.
 
 All clips include the emotion of the observer, though this emotion may be neutral.
 
@@ -102,7 +102,7 @@ Thoughts will be recorded as sequences so that key elements can be extracted for
 
 #### Purpose of Emotions
 
-Emotions are the steering wheel for decisions. They will have a strong influence on which sequence (including thought patterns) will be retrieved from experience in the next cycle via priming. This means that they exert their influence at every state change in the system allowing fine-grained control.
+Emotions are the steering wheel for decisions. They will have a strong influence on which sequence (including thought patterns) will be retrieved from experience in the next cycle via priming. This means that they exert their influence on every state change in the system allowing fine-grained control.
 
 #### Illustrative List of Emotions
 
@@ -126,7 +126,7 @@ This list is an illustration of the kind of priming that certain possible emotio
 
 #### Defining Emotions
 
--  A set of very general exemplar sequences will be defined and these will set the emotional goals of the system, e.g. a human being injured. Sequences that pattern-match to these core sequences will inherit these emotions according to the degree of similarity.
+-  A set of very general exemplar sequences will be defined and these will set the emotional responses of the system, e.g. various negative emotions for scenarios where a human being is injured. Sequences that pattern-match to these core sequences will inherit these emotions according to the degree of similarity.
 
 - This will likely require delicate calibration. It should be possible to author a large set of more specific scenarios in natural language along with expected emotional responses and / or consequent actions. These would be used for testing the system's motivations, including the AI safety aspects.
 
@@ -134,7 +134,10 @@ This list is an illustration of the kind of priming that certain possible emotio
 
 The act of effortful thinking involves holding focus on a thought so that the background get-next-clip loop generates subsequent thoughts that are relevant to that particular target of focus. The emotional guidance system should be balanced such that the cost of this thinking, e.g. time (aka opportunity cost) and power consumption, is balanced with whatever outcome is being sought.
 
-The solution finding strategy will typically involve looking at parts of the plan with different types of priming (e.g. what could go wrong here / worry emotion?) to see what options arise and then assessing those options.
+ Most plan-building strategies will involve these key aspects...
+
+ - Recognising some high-level pattern for what needs to be done, which includes realising that there is something that needs to be done.
+ - Looking at a part of the plan with various types of priming (e.g. "what could go wrong here?" + worry emotion and "what opportunities are there here?" + curiosity emotion) to see what options arise and then assessing those options. 
 
 ### Example 2 - Pythagoras
 
@@ -147,7 +150,6 @@ The process of solving a geometry question will require a range of overlapping t
 Some of the many thinking patterns include...
 
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
-
 
 ## The Self Narrative - Putting it all Together
 
@@ -162,7 +164,6 @@ The full picture includes the physical world model _and_ thoughts.
  - Thoughts to be understood in their full context - ".. I was approaching a bend in the road and was about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike..."
  - Integration the two models, e.g. thoughts can be overlaid onto the physical model to test ideas prior to action.
 
-
  > This is a good reason to avoid creating new structures for thinking that do not exist in our physical world model. The two layers can now be blended as required and the thinking layer benefits from the real world model's abilities in handling complexity.
 
 ### Consolidating Experiences
@@ -176,9 +177,4 @@ Something akin to sleep could be used to consolidate a section of the self-narra
 - Prepend a distilled self-narrative into a long term narrative store.
 
 If required, then this process could also distribute emotional reactions from core exemplar scenarios to more specific clips and sequences to guarantee that these emotions will surface in the relevant circumstances.
-
-
-
-
-
 
