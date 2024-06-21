@@ -1,6 +1,9 @@
 
 # Illustrated Summary (Draft)
 
+> **Author**: Robert Beckwith
+> **Version**: 0.1 - Draft for review
+
 ## Core Building Blocks
 
 Cognitive functions in this model will be built entirely from **clips**. Clips can be arranged into **sequences**.
@@ -15,7 +18,9 @@ A clip is a representation of 3D space with a small time component so that movem
 <img src="assets/images/fig-summary-clip.png" width="500"/>
 
 #### Ingredients
-Clips contain observable phenomena which are represented using particular ingredients. Each ingredient will be handled by a subsystem that specialises in that ingredient, e.g. spatial geometry.
+Clips contain observable phenomena which are represented using particular ingredients. Each ingredient will be handled by a subsystem that specialises in that ingredient, e.g. spatial geometry. 
+
+> Note: motion may be a vector only and therefore an actual time delta is not needed clips.
 
 All clips include the emotion of the observer, though this emotion may be neutral.
 
@@ -85,7 +90,7 @@ This example illustrates some of the thinking patterns that may be used when pla
 
 As can be seen from the example, thinking is a bit like manipulating objects. 
 
-> **This is already handled by clips and sequences so the above process can be placed into our existing framework.**
+**This is already handled by clips and sequences so the above process can be placed into our existing framework.**
 
 <br/>
 
@@ -101,18 +106,18 @@ todo - more detail
 
 #### Purpose of Emotions
 
-Emotions are the steering wheel for decisions. They will have a strong influence on which clip (including thought pattern clips) will be retrieved from experience in the next cycle via priming. This means that they exert their influence for every state change in the system allowing fine-grained control.
+Emotions are the steering wheel for decisions. They will have a strong influence on which sequence (including thought patterns) will be retrieved from experience in the next cycle via priming. This means that they exert their influence at every state change in the system allowing fine-grained control.
 
 #### Illustrative List of Emotions
 
-Illustrative priming effect of emotions...
+This list is an illustration of the kind of priming that certain possible emotions may have, i.e. what sort of thought patterns and actions are more likely to be retrieved for the next clip in working memory...
 
 * Curiosity - to encourage useful action that is not part of some assigned task.
 * Interest - to keep working on something.
 * Surprise - to notice significant new information that would benefit from further thought and storage in experience (including new causation / prediction knowledge). 
-* Doubt - to pause, consider and temper other emotions present in a plan.
+* Doubt - to pause, consider and to temper other emotions present in a plan.
 * Compassion and Empathy - to encourage thoughts of safety and kindness.
-* Desire - to act or make plans to reach a goal with positive emotions,
+* Desire - to act or make plans to reach a goal with positive emotions.
 * Coherence Desire - to adjust sequences (objects, thoughts etc) so that they flow smoothly.
 * Worry - to keep an important matter in mind.
 * Urgency - to work faster. May be sub-divided into other types, e.g. fear of missing out.
@@ -135,15 +140,14 @@ The process of solving a geometry question will require a range of overlapping t
 
 <img src="assets/images/fig-summary-example-pythagoras.png" width="800"/>
 
-### Thinking Patterns
+## The Self Narrative - Putting it all Together
+
+todo
+
+## Appendix - Thinking Pattern Examples
 
 Some of the many thinking patterns include...
 
 <img src="assets/images/fig-summary-planning-patterns.png" width="800"/>
 
-## The Self Narrative - Putting it all Together
-
-todo
-
-
-
+(todo - add illustrations of Arc solving patterns.)
