@@ -140,7 +140,7 @@ The solution finding strategy will typically involve looking at parts of the pla
 
 The process of solving a geometry question will require a range of overlapping thought patterns that describe the steps. Our system will return the best matching pattern in any given moment. If this an exam question, then the starting point is the observed question and the desired end point is for an answer to be written in the appropriate location that will receive full marks from the examiner. An additional requirement is that not too much time is spent on this process.
 
-<img src="assets/images/fig-summary-example-pythagoras.png" width="800"/>
+<img src="assets/images/fig-summary-example-pythagoras.png" width="600"/>
 
 ### Thinking Pattern Examples
 
@@ -156,12 +156,27 @@ The full picture includes the physical world model _and_ thoughts.
 <br/>
 <img src="assets/images/fig-summary-self-narrative-model.png" width="800"/>
 <br/>
+<br/>
 
  This allows:
  - Thoughts to be understood in their full context - ".. I was approaching a bend in the road and was about to slow down when I heard a loud noise off to the side that reminded me of an accelerating motorbike..."
- - Integration the two models, e.g. thoughts can be overlaid onto the physical model to test ideas.
+ - Integration the two models, e.g. thoughts can be overlaid onto the physical model to test ideas prior to action.
 
- > This is a good reason to avoid creating new structure for thinking that do not exist in our physical world model. The two layers can be blended as required and the thinking layer benefits from the real world model's abilities in handling complexity.
+
+ > This is a good reason to avoid creating new structures for thinking that do not exist in our physical world model. The two layers can now be blended as required and the thinking layer benefits from the real world model's abilities in handling complexity.
+
+### Consolidating Experiences
+
+Something akin to sleep could be used to consolidate a section of the self-narrative (e.g. one day) into general experiences. This could perhaps be done offline and the resulting weights downloaded by the AI system. The consolidation process would...
+
+- Assess the day's events and emotional moments for significant knowledge. 
+- Add key sequences to general experience having removed any internal thoughts that would distract the autopilot.
+- Identify and store the key thinking patterns.
+- Update the level of novelty for key events.
+- Prepend a distilled self-narrative into a long term narrative store.
+
+If required, then this process could also distribute emotional reactions from core exemplar scenarios to more specific clips and sequences to guarantee that these emotions will surface in the relevant circumstances.
+
 
 
 
