@@ -104,6 +104,8 @@ Thoughts will be recorded as sequences so that key elements can be extracted for
 
 Emotions are the steering wheel for decisions. They will have a strong influence on which sequence (including thought patterns) will be retrieved from experience in the next cycle via priming. This means that they exert their influence on every state change in the system allowing fine-grained control.
 
+It this design there is only one place holder for emotions. As emotions are used to assess the subject of focus there will only be one subject of focus at a time and furthermore there will be some optimal scope of this focus. If the scope is too broad then the causes of emotional responses will not be clear.
+
 #### Illustrative List of Emotions
 
 This list is an illustration of the kind of priming that certain possible emotions may have, i.e. what sort of thought patterns and actions are more likely to be retrieved for the next clip in working memory...

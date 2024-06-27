@@ -82,7 +82,7 @@ A sequence is a set of clips that follow one another in time. They should blend 
 * The main stages in a journey (gaps)
 
 #### Narratives
-A set of sequences arranged on a timeline. The timeline may span years.
+A set of sequences arranged on a timeline. The timeline may span years. These will be experiences where the time and place is known to some level of detail (implying that the time and place is relevant).
 
 ### Ingredients
 
@@ -180,7 +180,7 @@ Everything in this data type is something that humans can understand. They could
 It will be challenging to create a system that can handle this building block, however if this is done then it will allow us to create an entire thinking system that can act in the world and make human-like decisions where...
 
 * **All** knowledge is stored as clips and sequences.
-* Narrative history (aka episodic memory) is itself a sequence.
+* Narrative history (aka episodic memory) is itself a set of sequences.
 * High-level reasoning (aka System 2) is **entirely** the act of arranging clips into sequences with the guidance of emotions (including doubt, curiosity etc).
 * **All** thoughts and physical actions, including the arrangement of clip sequences for reasoning, are are themselves the result of following a clip sequence.
 
