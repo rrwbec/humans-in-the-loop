@@ -4,6 +4,44 @@
 > **Author**: Robert Beckwith
 > **Version**: 0.1 - Draft for review
 
+## Key Features
+
+What may be different from current work?
+
+Thinking uses the machinery of the physical world model - nothing new is created. This allows thinking to re-use the non-trivial capabilities of the world model and also to share data with this model. Thoughts are virtual objects that can be generated and assembled into temporal sequences. This activity follows predictions in much the same way as physical movement.
+
+There will be a loop generating the next thinking action based on
+1. The current subject of focus ()
+
+Level One
+
+* This design uses an architectural principle of minimalism which dictates that no new software components will be invented if needs can be met with existing mechanisms.
+* At the lowest level is a predictive physical world model that is recursively constructed from experiences. This includes the observer body, target of perceptual focus and emotions/feelings so "good" and "bad" experiences can be identified quickly.
+* Predictions (based on previous experience) include expected external changes and also observer changes such as tge next target of focus, next body positions (mostly via proprioception) and next emotion. 
+
+Via Minimalism we then create a thinking 
+
+### Physical Wold Model
+
+* A predictive world model is constructed within 3D space from key ingredients such as spatial geometry.
+* This must be fast and efficient.
+* The model is constructed recursively from reusable experiences e.g. ball, projectile, gravity, movement.
+* Experiences often involve a prediction, e.g the next position.
+* Model construction will be influenced by sensory data, though experiences will be the primary source of data as these already contains rich predictive knowledge.
+* The model includes the observer body and emotions / feelings. These are stored within experiences so that "good" and "bad" experiences can be rapidly identified.
+* Physical action (e.g. change of visual focus and limb position) will be predicted in experience just as "external" phenomena are. The observer's body follows the prediction. There is no other mechanism for physical action thought deliberate thinking can interrupt this process.
+
+### Mental World Model
+
+* To avoid new machinery, the mental world model is based on the physical world model. Thoughts are virtual objects that can be focussed on.
+* As with the physical world model, thinking activity can be stored as experience and predicted so that previously successful thinking patterns will be followed if similar circumstances occur.
+
+### Path Construction
+
+* Thinking is either review (passive scan of experiences) or path construction.
+* Path construction 
+
+
 ## Core Building Blocks
 
 Cognitive functions in this model will be built entirely from **clips**. Clips can be arranged into **sequences**.
@@ -12,7 +50,7 @@ Cognitive functions in this model will be built entirely from **clips**. Clips c
 
 ### Clips
 
-A clip is a representation of 3D space with a small time component so that movement can be included.
+A clip is a representation of 3D space with a small time component so that movement and sound can be included.
 
 #### Space and Time
 <img src="assets/images/fig-summary-clip.png" width="500"/>
@@ -20,9 +58,9 @@ A clip is a representation of 3D space with a small time component so that movem
 #### Ingredients
 Clips contain observable phenomena which are represented using particular ingredients. Each ingredient will be handled by a subsystem that specialises in that ingredient, e.g. spatial geometry. 
 
-> Note: motion may be a vector only and therefore an actual time delta may not be required for clips.
+> Note: The time slice may only be required (if at all) for certain ingredient types e.g sound and motion. Motion itself may be recorded as a vector.
 
-All clips include the emotion of the observer, though this emotion may be neutral.
+All clips include the emotion (or "feeling") of the observer, though this emotion may be neutral. This includes surprise, curiosity and doubt.
 
 <img src="assets/images/fig-summary-clip-example.png" width="500"/>
 
