@@ -2,7 +2,7 @@
 # Illustrated Summary (Draft)
 
 > **Author**: Robert Beckwith
-> **Version**: 0.1 - Draft for review
+> **Version**: 0.2 - Draft for review
 
 ## Key Features
 
