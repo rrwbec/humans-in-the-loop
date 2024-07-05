@@ -6,21 +6,32 @@
 
 ## Key Features
 
-### Starting Assumptions
+### Proposals and Constraints
 
->Core assumption is that building a human-like thinking system is a worthwhile project principally for alignment, transparency and trust reasons.
+>It is proposed that there is significant value in building a human-like thinking system for alignment, transparency and trust reasons.
 
->This design uses an architectural principle of minimalism which dictates that no new software components will be invented if needs can be met with existing mechanisms. As the design begins with navigation of the physical world using a physical world model, "existing" generally refers to physical world model mechanisms.
+>This design uses an architectural principle of minimalism which dictates that no new software components will be invented if needs can be met with pre-existing foundational mechanisms.
+
+>This design is high-level and relies on the creation of a non-trivial physical world model. It is likely that such a model will emerge from the robotics field.
+
+>There is likely no new idea here except possibly this particular method of assembly of these ideas.
 
 ### Reasoning Model
->Thinking and planning capabilities almost entirely reuse the machinery of a physical world model - nothing significantly new is created. This allows thinking to re-use the non-trivial stochastic capabilities of the world model and also to share data with this model. Thoughts are virtual objects that can be generated and assembled into temporal sequences such as a navigation route. This activity follows predictions in much the same way as physical movement via a "get next thought / set subject of focus" loop.
+>Reasoning capabilities mostly reuse the machinery of a physical world model - nothing significantly new is created. This allows reasoning processes to use the non-trivial stochastic capabilities of the world model and also to share data with this model. Thoughts are virtual objects that can be generated and assembled into temporal sequences such as a navigation route. This activity follows predictions in much the same way as physical movement via a "get next thought / set subject of focus" loop.
+
+>It is proposed that neuro-symbolic aspects of reasoning will be represented by sufficently distinct patterns in the world model, such as bounded objects, intuitive counting, sequential steps, thoughts as objects and so forth. This provides the benefits of symbolic reasoning without adding new data types to the architecture and also keeps the important stochastic ability to fill in the liminal spaces between symbols and generally handle ambiguity.
 
 ### Steered by Emotions
 >The world model includes the emotions/feelings of the observer which effectively assigns a value judgement to experiences. 
 
->The next action (physically or in thinking) will be determined mainly by the current subject of focus and the currently felt emotion. Recent experiences and the physical-social location will also prime for certain actions.
+>The next action (physical and/or mental) will be determined mainly by the current subject of focus and the currently felt emotion. Recent experiences and the physical-social location will also prime for certain actions.
 
->Deliberate and effortful thinking (aka System 2) arises when the emotional response to a subject of focus is strong enough to hold focus (i.e. prevent it from wandering on to something else). This focus and combined with the emotion will cause the underlying "get next thought" machinery to load thoughts relevant to this topic, including more complex and memory-intensive thinking patterns.
+>Deliberate and effortful thinking (aka System 2) arises when the emotional response to a subject of focus is strong enough to hold that focus (i.e. prevent it from wandering on to something else). This focus, combined with the emotion, will cause the underlying "get next thought" machinery to load thoughts and thought patterns relevant to this topic, including more complex and memory-intensive thinking patterns.
+
+>The underlying emotions can be authored as reactions to events and these placed in a core and immutable part of experience. The emotional reaction (and therefore the subsequent action or thought) will be derived (in simple terms) from how the target of focus matches on to these core events. There is scope from some safe customisation of these events to align with particular cultures or social environments.
+
+### Transparency
+>By using a human-like world model and then reusing this for reasoning, the task of inspecting the inner workings of the system is made much easier.
 
 ## Core Building Blocks
 
