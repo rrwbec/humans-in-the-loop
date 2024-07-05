@@ -19,7 +19,9 @@
 ### Reasoning Model
 >Reasoning capabilities mostly reuse the machinery of a physical world model - nothing significantly new is created. This allows reasoning processes to use the non-trivial stochastic capabilities of the world model and also to share data with this model. Thoughts are virtual objects that can be generated and assembled into temporal sequences such as a navigation route. This activity follows predictions in much the same way as physical movement via a "get next thought / set subject of focus" loop.
 
->It is proposed that neuro-symbolic aspects of reasoning will be represented by sufficently distinct patterns in the world model, such as bounded objects, intuitive counting, sequential steps, thoughts as objects and so forth. This provides the benefits of symbolic reasoning without adding new data types to the architecture and also keeps the important stochastic ability to fill in the liminal spaces between symbols and generally handle ambiguity.
+>It is proposed that neuro-symbolic aspects of reasoning will be represented by sufficently distinct patterns in the world model, such as bounded objects, intuitive counting, sequential steps, thoughts as objects and so forth. This provides the benefits of symbolic reasoning without adding new data types to the architecture and also keeps the important stochastic ability to fill in the liminal spaces between symbols and otherwise handle ambiguity.
+
+>Simple selection between two options will involve the construction of two sequences in working memory, focusing on these sequences in turn, and then responding to how each felt.
 
 ### Steered by Emotions
 >The world model includes the emotions/feelings of the observer which effectively assigns a value judgement to experiences. 
@@ -49,7 +51,9 @@ A clip is a representation of 3D space with a small time component so that movem
 #### Ingredients
 Clips contain observable phenomena which are represented using particular ingredients. Each ingredient will be handled by a subsystem that specialises in that ingredient, e.g. spatial geometry. 
 
-> Note: The time slice may only be required (if at all) for certain ingredient types e.g sound and motion. Motion itself may be recorded as a vector.
+>Note 1: The time slice may only be required (if at all) for certain ingredient types e.g sound and motion. Motion itself may be recorded as a vector.
+
+>Note 2: It may be most efficient to have a clip per ingredient and then combine these only when necessary. This will simplify training and may improve matching to experiences.
 
 All clips include the emotion (or "feeling") of the observer, though this emotion may be neutral. This includes surprise, curiosity and doubt.
 
