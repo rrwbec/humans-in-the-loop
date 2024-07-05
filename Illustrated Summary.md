@@ -53,7 +53,7 @@ Clips contain observable phenomena which are represented using particular ingred
 
 >Note 1: The time slice may only be required (if at all) for certain ingredient types e.g sound and motion. Motion itself may be recorded as a vector.
 
->Note 2: It may be most efficient to have a clip per ingredient and then combine these only when necessary. This will simplify training and may improve matching to experiences.
+>Note 2: It may be most efficient to have a clip per ingredient and then combine these only when necessary. This will simplify training and may improve matching to experiences. It will also facilitate adding new ingredients without having to full retrain the whole system.
 
 All clips include the emotion (or "feeling") of the observer, though this emotion may be neutral. This includes surprise, curiosity and doubt.
 
