@@ -10,6 +10,17 @@ The weft can be seen as knowledge of the properties of things and how they are s
 <img src="../images/fig-weave-warp-and-weft.png" width="900"/>
 
 
+## Associative Knowledge
+
+The knowledge encapsulated by association is an essential component in thinking...
+
+<img src="../images/fig-weave-associative-knoledge.png" with="900">
+
+It will be used when constructing narratives as it allows past experience to be applied to new but similar situations.
+
+img todo
+
+
 ## Example of Relevant vs Creative Thinking
 
 As an example, we could say that one mechanism for adjusting the level of creativity of the next occurring thought is the amount of data that we use as a source when looking for a matching pattern...
