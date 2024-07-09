@@ -1,6 +1,6 @@
-# Weaving Analogy for Thinking
+# Reasoning in Pictures
 
-## Warp and Weft
+## Stories and Association - The Warp and Weft
 A possibly useful metaphor for one aspect of thinking is via weaving. Tapestries are woven from the warp and the weft - perpendicular threads that interlock to bind the whole tapestry together.
 
 The warp can be seen as narrative knowledge "this, then that, then that" - temporal sequences that we use to predict, plan and generally understand the world. 
@@ -18,7 +18,7 @@ The knowledge encapsulated by association is an essential component in thinking.
 
 It will be used when constructing narratives as it allows past experience to be applied to new but similar situations.
 
-img todo
+<img src="../images/fig-weave-reasoning-basic.png" width="900">
 
 
 ## Example of Relevant vs Creative Thinking
