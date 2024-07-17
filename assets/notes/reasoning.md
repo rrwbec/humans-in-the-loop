@@ -8,10 +8,10 @@ Version: pre-draft
 
 This document presents a view on human cognition. This is an initial sketch to encourage feedback with the hope that this could become a useful framework for thinking about human thinking and potentially other sorts of thinking. It is not intended to be a comprehensive description - complex problems do not usually have simple answers.
 
-In this view cognition is divided into two key parts...
+This view of cognition is divided into two key parts...
 
 * **World Model** - our internal model of the world and its mechanisms.
-* **Value Assessment** - our value judgement of information, i.e. how we feel about it.
+* **Value Assessment** - our value judgement of what we perceive in the model, i.e. how we feel about it.
 
 
 ## World Model
@@ -72,7 +72,7 @@ Strong patterns may be...
 
 ### Simple Plan Building
 
-When we are planning, the next option that comes to mind will be based on association with previous experience.
+When we are planning, the next option that comes to mind will be based on association with previous experience. A simple example of this is as follows...
 
 <img src="../images/fig-weave-reasoning-basic.png" width="900"/>
 <br/>
