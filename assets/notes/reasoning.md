@@ -10,8 +10,8 @@ This document presents a view on human cognition. This is an initial sketch to e
 
 This view of cognition is divided into two key parts...
 
-* **World Model** - our internal model of the world and its mechanisms.
-* **Value Assessment** - our value judgement of what we perceive in the model, i.e. how we feel about it.
+* **World Model** - our internal model of the world and ourselves.
+* **Value Assessment** - our value judgement of what we perceive in the model i.e. how we feel about it.
 
 
 ## World Model
@@ -20,7 +20,7 @@ This view of cognition is divided into two key parts...
 
 The information in this world model is in the form of **stories** - temporal sequences of the form "_this, then that, then that_". We use these to predict, plan and generally understand the world. Each moment in a sequence is built from certain "ingredients of understanding" such as 3D geometry and colours.
 
-The primary activity of our minds is the process of finding connections between these stories. It is this lateral associative activity that weaves the story threads together into a complete information model much like the warp and weft of a tapestry.
+The primary activity of our minds is the process of finding shared patterns between these stories. It is this lateral associative activity that weaves the story threads together into a complete information model somewhat like the warp and weft of a tapestry.
 
 <br/>
 <img src="../images/fig-weave-warp-and-weft.png" width="900"/>
@@ -28,18 +28,18 @@ The primary activity of our minds is the process of finding connections between 
 
 Examples of stories include...
 
-* We way that water drops flow down a window
+* We way that water drops flow down a window pane
 * That time you accidentally threw a ball though Mr Smith's window
 * The typical process for boarding an aircraft
 * Your childhood
-* The sensations of a cold drink on a hot day
+* The sensations felt when having a cold drink on a hot day
 * Ideas about the future of humanity
-* How objects fall in gravity
+* How objects fall and bounce
 * The opening bars of a song
 
 
  
- _**In all cases, these include how you feel or felt about these things**_
+ _**The model includes how you feel or felt about these things**_
 
 ## Stories
 ### Story Ingredients
