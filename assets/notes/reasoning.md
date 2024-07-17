@@ -1,4 +1,4 @@
-# Reasoning in Pictures
+# Human Cognition in Pictures
 
 Author: Robert Beckwith
 </br>
@@ -6,17 +6,46 @@ Version: pre-draft
 
 //todo - settle naming conventions.
 
-## Stories and Association - The Warp and Weft
+This document presents a view on human cognition. This is an initial sketch to encourage feedback with the hope that this could become a useful framework for thinking about human thinking and potentially other sorts of thinking. It is not intended to be a comprehensive description - complex problems do not usually have simple answers.
 
-This proposal presents thinking as a weave of stories and associative connections between stories, much as tapestries are woven from a "warp" and cross-cutting "weft".
+In this view cognition is divided into two key parts...
 
-The warp can be seen as narrative knowledge "this, then that, then that" - temporal sequences that we use to predict, plan and generally understand the world. These will be called 'stories" in this document.
+* **World Model** - our internal model of the world and its mechanisms.
+* **Value Assessment** - our value judgement of information, i.e. how we feel about it.
 
-The weft can be seen those things that stories have in common, i.e. similar patterns. These will be called "associations" in this document.
+
+## World Model
+
+### Stories and Association
+
+The information in this world model is in the form of **stories** - temporal sequences of the form "_this, then that, then that_". We use these to predict, plan and generally understand the world. Each moment in a sequence is built from certain "ingredients of understanding" such as 3D geometry and colours.
+
+The primary activity of our minds is the process of finding connections between these stories. It is this lateral associative activity that weaves the story threads together into a complete information model much like the warp and weft of a tapestry.
+
 <br/>
 <img src="../images/fig-weave-warp-and-weft.png" width="900"/>
+<br/>
 
-## Story Ingredients
+Examples of stories include...
+
+* We way that water drops flow down a window
+* That time you accidentally threw a ball though Mr Smith's window
+* The typical process for boarding an aircraft
+* Your childhood
+* The sensations of a cold drink on a hot day
+* Ideas about the future of humanity
+* How objects fall in gravity
+* The opening bars of a song
+
+
+ 
+ _**In all cases, these include how you feel or felt about these things**_
+
+## Stories
+### Story Ingredients
+
+> **Terminology Note:** Similar terms include _templates_ and _categories of understanding_
+
 <br/>
 <img src="../images/fig-weave-story-ingredients.png" width="900"/>
 <br/>
@@ -24,18 +53,26 @@ Story Sequences
 
 todo
 
-## Associative Knowledge
+## Association
+
+### Matching on Story Patterns
 
 The knowledge encapsulated by association is an essential component in thinking...
 <br/>
-<img src="../images/fig-weave-associative-knoledge.png" with="900"/>
+<img src="../images/fig-weave-associative-knoledge.png" with="700"/>
 <br/>
 It will be used when constructing narratives as it allows past experience to be applied to new but similar situations.
+
+Strong patterns may be...
+* Shared by many stories
+* Have a strong emotion attached (including surprise)
+* Recently encountered
+
 <br/>
 
-## Simple Plan Building
+### Simple Plan Building
 
-The options that we are aware of will come to mind based on association with previous experience.
+When we are planning, the next option that comes to mind will be based on association with previous experience.
 
 <img src="../images/fig-weave-reasoning-basic.png" width="900"/>
 <br/>
@@ -52,15 +89,41 @@ Examples include...
 * Common activities (walking, crossing the road, preparing breakfast ...)
 * Common thinking patterns (adding a list of numbers, choosing )
 
-## Changing Behaviour
+### Lenses on Life
+
+The above mechanism will affect what we notice in the complex world of our environment and our thoughts.
+
+### Creativity
+
+
+### Changing Behaviour
 
 todo
 
 <img src="../images/fig-weave-changing-bahaviour.png" width="900"/>
 
-## Example of Relevant vs Creative Thinking
+### Example of Relevant vs Creative Thinking
 
 As an example, we could say that one mechanism for adjusting the level of creativity of the next occurring thought is the amount of data that we use as a source when looking for a matching pattern...
 <br/>
 <img src="../images/fig-weave-creativity.png" width="900"/>
 <br/>
+
+## Feelings and Value Judgements
+
+todo
+
+### Focus of Attention
+
+### Slow Thinking
+
+* Small focus for targeted assessment
+* We experience things in sequence
+* Holding focus to stimulate additional options
+* Slow thinking patterns
+
+
+### Levels of Evaluation
+
+### Storing Evaluations
+
