@@ -28,7 +28,7 @@ The primary activity of our minds is the process of finding shared patterns betw
 
 Examples of stories include...
 
-* We way that water drops flow down a window pane
+* The way that water drops flow down a window pane
 * That time you accidentally threw a ball though Mr Smith's window
 * The typical process for boarding an aircraft
 * Your childhood
