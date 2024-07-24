@@ -30,7 +30,7 @@ Examples of stories include...
 
 * The typical process for boarding an aircraft
 * That time you accidentally threw a ball though Mr Smith's window
-* We way that rain drops flow down a window
+* The way that rain drops flow down a window
 * The main events of your childhood
 * The sensations of a cold drink on a hot day
 * Ideas about the future of humanity
@@ -40,7 +40,7 @@ Examples of stories include...
 
  _**In all cases, these stories include how you feel or felt about these things**_
 
-> "Everything is flux" (Heraclitus) - note that this information is more about the **behaviour** of the world and the things in it and less about static models of objects, places and concepts.
+> "Everything is flux" (Heraclitus) - note that this information is more about the **behaviour** of the world and the things in it and less about models of static objects, places and concepts.
 
 ## Association
 
@@ -50,7 +50,8 @@ The knowledge encapsulated by association is an essential component in thinking.
 <br/>
 <img src="../images/fig-weave-associative-knoledge.png" with="700"/>
 <br/>
-It will be used when constructing narratives as it allows past experience to be applied to new but similar situations.
+
+This process will be used when constructing narratives as it allows past experience to be applied to new but similar situations.
 
 Strong patterns may be...
 * Shared by many stories
