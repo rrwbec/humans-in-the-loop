@@ -6,7 +6,7 @@ Version: pre-draft
 
 //todo - settle naming conventions.
 
-This document presents a view on human cognition. This is an initial sketch to encourage feedback with the hope that this could become a useful framework for thinking about human thinking and potentially other sorts of thinking. It is not intended to be a comprehensive description - complex problems do not usually have simple answers.
+This document presents a view on human cognition. This is an initial sketch to encourage feedback with the hope that despite its simplistic nature this could become a useful framework for thinking about human thinking and potentially other sorts of thinking. It is not intended to be a comprehensive description - complex problems do not generally have simple answers.
 
 This view of cognition is divided into two key parts...
 
@@ -28,30 +28,19 @@ The primary activity of our minds is the process of finding shared patterns betw
 
 Examples of stories include...
 
-* The way that water drops flow down a window pane
-* That time you accidentally threw a ball though Mr Smith's window
 * The typical process for boarding an aircraft
-* Your childhood
-* The sensations felt when having a cold drink on a hot day
+* That time you accidentally threw a ball though Mr Smith's window
+* We way that rain drops flow down a window
+* The main events of your childhood
+* The sensations of a cold drink on a hot day
 * Ideas about the future of humanity
 * How objects fall and bounce
 * The opening bars of a song
 
 
- 
- _**The model includes how you feel or felt about these things**_
+ _**In all cases, these stories include how you feel or felt about these things**_
 
-## Stories
-### Story Ingredients
-
-> **Terminology Note:** Similar terms include _templates_ and _categories of understanding_
-
-<br/>
-<img src="../images/fig-weave-story-ingredients.png" width="900"/>
-<br/>
-Story Sequences
-
-todo
+> "Everything is flux" (Heraclitus) - note that this information is more about the **behaviour** of the world and the things in it and less about static models of objects, places and concepts.
 
 ## Association
 
@@ -85,26 +74,28 @@ The matching story will be based on...
 
 Examples include...
 
-* Commonly encountered objects (cars, eggs, houses ...)
+* The typical behaviour of common objects (cars, eggs, houses ...)
 * Common activities (walking, crossing the road, preparing breakfast ...)
-* Common thinking patterns (adding a list of numbers, choosing )
+* Common thinking patterns (adding a list of numbers, choosing between options)
 
 ### Lenses on Life
 
 The above mechanism will affect what we notice in the complex world of our environment and our thoughts.
 
+todo - next item of focus. Changes from child to adult. Effect of emptional state etc.
+
 ### Creativity
 
-
-### Changing Behaviour
-
 todo
+Various association patterns for creativity
 
-<img src="../images/fig-weave-changing-bahaviour.png" width="900"/>
 
-### Example of Relevant vs Creative Thinking
+#### Example of Relevant vs Creative Thinking
 
 As an example, we could say that one mechanism for adjusting the level of creativity of the next occurring thought is the amount of data that we use as a source when looking for a matching pattern...
+
+To do - Ian McGilchrist talks of the right hemisphere specialising in the bigger picture, so the main counterpart of the "practical" left brain matching below should perhaps be a deliberately wider match into the broader context of our internal model. There would be a constantly balanced trade-off between  narrow and broad associations.
+
 <br/>
 <img src="../images/fig-weave-creativity.png" width="900"/>
 <br/>
@@ -126,4 +117,22 @@ todo
 ### Levels of Evaluation
 
 ### Storing Evaluations
+
+## Stories
+### Story Ingredients
+
+> **Terminology Note:** Similar terms include _templates_ and _categories of understanding_
+
+<br/>
+<img src="../images/fig-weave-story-ingredients.png" width="900"/>
+<br/>
+Story Sequences
+
+todo
+
+### Changing Behaviour
+
+todo
+
+<img src="../images/fig-weave-changing-bahaviour.png" width="700"/>
 
